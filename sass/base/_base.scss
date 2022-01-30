@@ -1,0 +1,18 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    @extend %font-default;
+    @include font($size: 1.6rem, $height: 2.6rem, $weight: bold); 
+}
+
+h1 {
+    @extend %font-default;
+    @include font($size: 4.4rem, $height: 5.4rem, $weight: 400); 
+}
+
+h2 {
+    @extend %font-default;
+    @include font($size: 3.4rem, $height: 4.6rem, $weight: 400); 
+}
