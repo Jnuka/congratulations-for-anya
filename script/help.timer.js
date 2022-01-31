@@ -29,7 +29,6 @@ const resolveHelpMsgs = (elements, realMsgs, countOfClicks) => {
 
 function startTimer() {
     time -= 1;
-    console.log("time = " + time);
 
     if (time === 0) {
         helpButton.innerHTML = HELP_IS_READY_MSG;
