@@ -4,3 +4,19 @@
     font-weight: $weight;
     font-style: $style;   
 }
+
+@mixin media-table {
+    @media(max-width: $tablet-width) {@content;}
+}
+
+@mixin media-mobileL {
+    @media(max-width: $mobile-l-width) {@content;}
+}
+
+@mixin media-mobileM {
+    @media(max-width: $mobile-m-width) {@content;}
+}
+
+@mixin media-mobileS {
+    @media(max-width: $mobile-s-width) {@content;}
+}
