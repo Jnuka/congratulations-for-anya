@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Beastly&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sass/style.css">
-    
+    <link rel="stylesheet" href="sass/popup.style.css">
 </head>
 <body>
     <header class="header">
@@ -37,8 +37,8 @@
                                 <div class="puzzle_button">
                                     <a class="button button-send" href="test1.html" id="button-send">Отправить</a>
                                     <!-- <button class="button button-send">Отправить</button> -->
-                                    <a class="button button-help" id="button-help">Подсказка</a>
-                                    <!-- <button class="button button-help" id="button-help">Подсказка</button> -->
+                                    <!-- <a class="button button-help" id="button-help">Подсказка</a> -->
+                                    <button id="button-help" type="button" data-modal="help_modal" class="button button-help">Подсказка</button>
                                 </div>                                   
                             </form>
                         </div>
@@ -47,6 +47,17 @@
             <!-- <canvas></canvas> -->
         </div>
     </section>
+    <div class="overlay" data-close=""></div>
+    <div id="help_modal" class="dlg-modal dlg-modal-fade">
+		<span class="closer" data-close=""></span>
+		<h3>Всплывающее окно 1</h3>
+	</div>
+	<div id="win_modal" class="dlg-modal dlg-modal-fade">
+		<span class="closer" data-close=""></span>
+		<h3>Всплывающее окно 2</h3>
+	</div>
+
 </body>
-<script src="script/help_timer.js"></script>
+<script src="script/help.timer.js"></script>
+<script src="script/popup.function.js"></script>
 </html>
