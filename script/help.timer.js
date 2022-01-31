@@ -1,47 +1,23 @@
 const TIME = 3; // time in seconds
 
-let time = TIME + 1;
-let timer;
-
-let helpButton = document.getElementById("button-help");
-
-startTimer();
-
-const getHelpButtonNotReadyMsg = (time) => {return `Подсказка ещё не готова, нужно подождать ещё ${time} секунд(ы)`};
-const updateButtonStyle = (button, style) => {
-    //** todo: update button style here **// 
-}
+const getHelpButtonNotReadyMsg = (time) => {return `Следующая подсказка будет доступна через ${time} секунд(ы)`};
+const HELP_IS_READY_MSG = "Доступна новая подсказка!";
 
 function startTimer() {
     time -= 1;
-    console.log(`time to help: ${time}`);
 
     if (time === 0) {
-        // button.className = 'button_on';
-        updateButtonStyle(helpButton, "");
+        helpButton.innerHTML = HELP_IS_READY_MSG;
         clearTimeout(timer);
     } else {
-        // helpButton.className = 'button_off';
-        updateButtonStyle(helpButton, "");
+        helpButton.innerHTML = getHelpButtonNotReadyMsg(time);
         timer = setTimeout(startTimer, 1000);
     }
 }
 
+// Start script
+let time = TIME + 1;
+let timer;
 
-
-// const resetTimer = () => {
-//     time = TIME + 1;
-//     startTimer();
-// }
-
-// button.onclick = () => {
-//     if (time != 0) {
-//         notReady.innerText = hintNotReady(time);
-//         helpHint.style.visibility = 'visible';
-//     } else {
-//         helpHints[countOfCliks].innerText = HELPS[countOfCliks];
-//         countOfCliks += 1;
-//         helpHint.style.visibility = 'visible';
-//         resetTimer();
-//     }
-// };
+let helpButton = document.getElementById("button-help");
+startTimer();

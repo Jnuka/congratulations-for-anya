@@ -31,14 +31,12 @@
                             <p class="puzzle_text">Д ёя лсдпм, ыцт бцт еяпт ёдпвцтн ёт ёфирисд рднг? Бцт уфиофдхсян шдоц, ст тцёиц сд бцч лдждзоч — ьтотпдз.</p>
                         </div>
                         <div class="puzzle__form">
-                            <form action method="POST">
+                            <form id="answer_form">
                                 <div class="puzzle__answer">
-                                    <input class="puzzle__input" type="text" name="answer" placeholder="Твой Ответ">
+                                    <input id="input" class="puzzle__input" type="text" name="answer" placeholder="Твой Ответ">
                                 </div> 
                                 <div class="puzzle_button">
-                                    <a class="button button-send" href="test1.html" id="button-send">Отправить</a>
-                                    <!-- <button class="button button-send">Отправить</button> -->
-                                    <!-- <a class="button button-help" id="button-help">Подсказка</a> -->
+                                    <button id="submit_button" class="button button-send">Проверить</button>
                                     <button id="button-help" type="button" data-modal="help_modal" class="button button-help">Подсказка</button>
                                 </div>                                   
                             </form>
@@ -59,6 +57,8 @@
 	</div>
 
 </body>
+<script>const stage = 'stage1';</script>
 <script src="script/help.timer.js"></script>
 <script src="script/popup.function.js"></script>
+<script src="script/input.validator.js"></script>
 </html>
