@@ -491,7 +491,7 @@ h2 {
 }
 
 .puzzle {
-  background-image: url("/img/puzzles/fon1.png");
+  background-image: url("../img/puzzles/fon1.png");
   padding: 30px 0;
 }
 
@@ -562,8 +562,16 @@ h2 {
   text-align: center;
 }
 
+.button-send {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #FF9900;
+}
+
 .button-help {
   margin-top: 20px;
+  text-decoration: none;
+  color: #FF9900;
 }
 
 .button-img {
