@@ -5,6 +5,7 @@ html {
 body {
     @extend %font-default;
     @include font($size: 1.6rem, $height: 2.6rem, $weight: bold); 
+    background-image: url("../img/puzzles/fon1.png");
 }
 
 h1 {
