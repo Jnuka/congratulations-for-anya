@@ -12,23 +12,25 @@
 <body>
     <header class="header">
         <div class="wrapper">
+            <div class="container">
+                <h1 class="header__title">Рожденские загадки! Отгадай или не сможешь открыть подарки</h1> 
+            </div>
             <!-- <div class="header__photo">
                 <a href="#" class="photo">
                     <img src="./img/photo_anna.png" alt="photoAnna">          
                 </a>
-            </div>-->
-            <h1 class="header__title">Рожденские загадки! Отгадай или не сможешь открыть подарки</h1> 
+            </div>-->            
         </div>
     </header>
     <section class="puzzle">
         <div class="wrapper">
-            <!--<canvas></canvas>   -->
+            <div class="container">
                 <div class="puzzle__direction">
                     <h2 class="puzzle__title">Загадка №1</h2>
                     <div class="puzzle__container">
                         <div class="puzzle__task">                    
                             <img class="puzzle__image" src="./img/puzzles/1.svg" alt="puzzel-one">    
-                            <p class="puzzle_text">Д ёя лсдпм, ыцт бцт еяпт ёдпвцтн ёт ёфирисд рднг? Бцт уфиофдхсян шдоц, ст тцёиц сд бцч лдждзоч — ьтотпдз.</p>
+                            <h3 class="puzzle_text">Д ёя лсдпм, ыцт бцт еяпт ёдпвцтн ёт ёфирисд рднг? Бцт уфиофдхсян шдоц, ст тцёиц сд бцч лдждзоч — ьтотпдз.</h3>
                         </div>
                         <div class="puzzle__form">
                             <form id="answer_form">
@@ -42,18 +44,17 @@
                             </form>
                         </div>
                     </div>             
-                </div>        
-            <!-- <canvas></canvas> -->
+                </div>  
+            </div>      
         </div>
-    </section>
+    </section>    
     <div class="overlay" data-close=""></div>
-    <div id="help_modal" class="dlg-modal dlg-modal-fade">
+    <div id="help_modal" class="dlg-modal dlg-modal-fade puzzle__one">
 		<span class="closer" data-close=""></span>
-		<h3>Всплывающее окно 1</h3>
-	</div>
-	<div id="win_modal" class="dlg-modal dlg-modal-fade">
-		<span class="closer" data-close=""></span>
-		<h3>Всплывающее окно 2</h3>
+		<h2 class="help__title">Подсказки:</h2>
+        <h3 class="help_1">1. Разве это не шифр того знаменитого парня?</h3>
+        <h3 class="help_2">2. Тебе нравится салат цезарь?</h3>   
+        <h3 class="help_3">3. Похоже на шифр цезаря со сдвигом в 4 буквы вперёд :S</h3>    
 	</div>
 
 </body>

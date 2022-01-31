@@ -1,0 +1,52 @@
+/* animation */
+.fadeIn, .fadeOut, .slideInDown, .slideOutUp { 
+	-webkit-animation-duration: 0.4s; 
+	animation-duration: 0.4s; 
+	-webkit-animation-timing-function: linear; 
+	animation-timing-function: linear; 
+}
+
+@keyframes fadeIn { 
+	from { opacity: 0; visibility: hidden; }
+	to { opacity:1; visibility: visible; }
+}
+
+.fadeIn { 
+	-webkit-animation-name: fadeIn; 
+	animation-name: fadeIn; 
+	opacity: 1; 
+	visibility: visible; 
+}
+
+@keyframes fadeOut { 
+	from { opacity: 1; visibility: visible; }
+	to { opacity:0; visibility: hidden; }
+}
+
+.fadeOut { 
+	-webkit-animation-name: fadeOut; 
+	animation-name: fadeOut; 
+	opacity: 0; 
+	visibility: hidden; 
+}
+
+@keyframes slideInDown { 
+	from { top: -20px; -webkit-transform: translate(-50%, -100%); transform: translate(-50%, -100%); }
+	to { top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+}
+.slideInDown { 
+	-webkit-animation-name: slideInDown; 
+	animation-name: slideInDown; 
+	top: 50%; 
+	transform: translate(-50%, -50%); 
+}
+
+@keyframes slideOutUp { 
+	from { top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+	to { top: -20px; -webkit-transform: translate(-50%, -100%); transform: translate(-50%, -100%); }
+}
+
+.slideOutUp { 
+	-webkit-animation-name: slideOutUp; 
+	animation-name: slideOutUp; 
+}

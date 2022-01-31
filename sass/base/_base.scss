@@ -1,19 +1,30 @@
 html {
     font-size: 10px;
+    background-image: url("../img/puzzles/fon1.png");
 }
 
 body {
     @extend %font-default;
     @include font($size: 1.6rem, $height: 2.6rem, $weight: bold); 
-    background-image: url("../img/puzzles/fon1.png");
+    
+    padding-bottom: 30px;
 }
 
 h1 {
     @extend %font-default;
-    @include font($size: 4.4rem, $height: 5.4rem, $weight: 400); 
+    @include font($size: 4.0rem, $height: 5.0rem, $weight: 400); 
 }
 
 h2 {
     @extend %font-default;
-    @include font($size: 3.4rem, $height: 4.6rem, $weight: 400); 
+    @include font($size: 3.4rem, $height: 4.6rem, $weight: 400);
+    @include media-mobileS {
+        @include font($size: 3.0rem, $height: 4.0rem, $weight: 400);
+    }
+}
+
+h3 {
+    @extend %font-default;
+    @include font($size: 2.5rem, $height: 3.8rem, $weight: 400);
+    
 }
