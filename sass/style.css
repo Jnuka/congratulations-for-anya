@@ -417,12 +417,13 @@ ul {
   box-sizing: border-box;
 }
 
-.button, h2, h1, body {
+.button, h3, h2, h1, body {
   font-family: "Source Serif 4", Verdana, sans-serif;
 }
 
 html {
   font-size: 10px;
+  background-image: url("../img/puzzles/fon1.png");
 }
 
 body {
@@ -430,12 +431,12 @@ body {
   line-height: 2.6rem;
   font-weight: bold;
   font-style: normal;
-  background-image: url("../img/puzzles/fon1.png");
+  padding-bottom: 30px;
 }
 
 h1 {
-  font-size: 4.4rem;
-  line-height: 5.4rem;
+  font-size: 4rem;
+  line-height: 5rem;
   font-weight: 400;
   font-style: normal;
 }
@@ -443,6 +444,21 @@ h1 {
 h2 {
   font-size: 3.4rem;
   line-height: 4.6rem;
+  font-weight: 400;
+  font-style: normal;
+}
+@media (max-width: 320px) {
+  h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 3.8rem;
   font-weight: 400;
   font-style: normal;
 }
@@ -459,11 +475,69 @@ h2 {
   height: 50px;
 }
 
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.87);
+}
+
+.dlg-modal {
+  width: 100%;
+  max-width: 570px;
+  height: 50%;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  z-index: 10;
+  padding: 35px 36px;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.85);
+}
+
+.dlg-modal-fade {
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.closer {
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  right: 35px;
+  top: 20px;
+  background: url("../img/cross.png") no-repeat;
+  cursor: pointer;
+}
+
+.closer:hover {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
 .header {
   background: #ffffff;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-  padding: 24px 0;
+  padding: 42px 0;
   background-image: url("../img/puzzles/fon1.png");
+}
+
+.container {
+  margin: 0 30px;
+  background-color: white;
+  border-radius: 80px;
+  border: 5px solid pink;
+  padding: 20px 0;
 }
 
 .header__title {
@@ -490,11 +564,6 @@ h2 {
 .wrapper {
   max-width: 1197px;
   margin: auto;
-  background-color: white;
-}
-
-.puzzle {
-  background-image: url("../img/puzzles/fon1.png");
 }
 
 .puzzle__title {
@@ -524,21 +593,26 @@ h2 {
 }
 @media (max-width: 475px) {
   .puzzle__image {
-    width: 400px;
-    height: 400px;
-  }
-}
-@media (max-width: 375px) {
-  .puzzle__image {
     width: 350px;
     height: 350px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .puzzle__image {
     width: 300px;
     height: 300px;
   }
+}
+@media (max-width: 320px) {
+  .puzzle__image {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.puzzle_text {
+  max-width: 800px;
+  text-align: center;
 }
 
 .puzzle__form {
@@ -581,6 +655,89 @@ h2 {
 
 .button-img {
   text-align: center;
+}
+
+.puzzle__one {
+  border-radius: 80px;
+  border: 5px solid pink;
+}
+
+/* animation */
+.fadeIn, .fadeOut, .slideInDown, .slideOutUp {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes slideInDown {
+  from {
+    top: -20px;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes slideOutUp {
+  from {
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  to {
+    top: -20px;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+}
+.slideOutUp {
+  -webkit-animation-name: slideOutUp;
+  animation-name: slideOutUp;
 }
 
 /*# sourceMappingURL=style.css.map */

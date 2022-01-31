@@ -1,0 +1,50 @@
+.overlay { 
+	opacity: 0; 
+	visibility: hidden; 
+	position:fixed; 
+	left: 0; 
+	right: 0; 
+	top: 0; 
+	bottom: 0; 
+	z-index: 5; 
+	background: rgba(0,0,0,0.87); 
+}
+
+.dlg-modal {
+	width: 100%; 
+	max-width: 570px; 
+	height: 50%; 
+	opacity: 0; 
+	visibility: hidden; 
+	text-align: center; 
+	position: fixed; 
+	left: 50%; 
+	z-index: 10; 
+	padding: 35px 36px; 
+	background: #fff; 
+	border-radius: 10px; 
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.85); 
+	box-shadow: 0 0 20px rgba(0,0,0,0.85); 
+}
+
+.dlg-modal-fade { 
+	top: 50%; 
+	-webkit-transform: translate(-50%, -50%); 
+	transform: translate(-50%, -50%); 
+}
+
+.closer { 
+	width: 40px; 
+	height: 40px; 
+	display: block; 
+	position: absolute; 
+	right: 35px;
+    top: 20px;
+	background: url('../img/cross.png') no-repeat; 
+	cursor: pointer; 
+}
+
+.closer:hover { 
+	-webkit-transform: rotate(90deg); 
+	transform: rotate(90deg); 
+}
