@@ -521,11 +521,11 @@ h3 {
   border-color: #422521;
 }
 .button-puzzle5 {
-  color: #524439;
-  border: 3px solid #524439;
+  color: rgba(85, 65, 49, 0.8);
+  border: 3px solid rgba(85, 65, 49, 0.8);
 }
 .button-puzzle5:focus {
-  border-color: #524439;
+  border-color: rgba(85, 65, 49, 0.8);
 }
 .button-puzzle7 {
   color: #941c0c;
@@ -621,7 +621,7 @@ h3 {
 }
 
 .container-pizzle5 {
-  border: 5px solid #524439;
+  border: 5px solid rgba(85, 65, 49, 0.8);
 }
 
 .container-pizzle7 {
@@ -677,14 +677,14 @@ h3 {
   outline: none;
 }
 .puzzle__input-puzzle5 {
-  border: 3px solid #524439;
+  border: 3px solid rgba(85, 65, 49, 0.8);
   background-color: #ffffff;
   padding: 10px 21px;
   border-radius: 10px;
-  border-color: #524439;
+  border-color: rgba(85, 65, 49, 0.8);
 }
 .puzzle__input-puzzle5:focus {
-  border-color: #524439;
+  border-color: rgba(85, 65, 49, 0.8);
   outline: none;
 }
 .puzzle__input-puzzle7 {
