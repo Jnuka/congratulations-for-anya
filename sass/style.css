@@ -423,7 +423,6 @@ ul {
 
 html {
   font-size: 10px;
-  background-image: url("../img/puzzles/fon1.png");
 }
 
 body {
@@ -432,6 +431,14 @@ body {
   font-weight: bold;
   font-style: normal;
   padding-bottom: 30px;
+}
+
+.body-puzzle1 {
+  background-image: url("../img/puzzles/fon1.png");
+}
+
+.body-puzzle3 {
+  background-image: url("../img/puzzles/fon3.png");
 }
 
 h1 {
@@ -473,6 +480,10 @@ h3 {
 .button-img {
   width: 50px;
   height: 50px;
+}
+
+.button-next {
+  margin-bottom: 10px;
 }
 
 .overlay {
@@ -526,18 +537,24 @@ h3 {
   transform: rotate(90deg);
 }
 
-.header {
-  background: #ffffff;
-  padding: 42px 0;
-  background-image: url("../img/puzzles/fon1.png");
-}
-
 .container {
   margin: 0 30px;
   background-color: white;
   border-radius: 80px;
-  border: 5px solid pink;
   padding: 20px 0;
+}
+
+.container-pizzle1 {
+  border: 5px solid pink;
+}
+
+.container-pizzle3 {
+  border: 5px solid #422521;
+}
+
+.header {
+  background: #ffffff;
+  padding: 42px 0;
 }
 
 .header__title {
@@ -561,16 +578,24 @@ h3 {
   }
 }
 
+.header-puzzle1 {
+  background-image: url("../img/puzzles/fon1.png");
+}
+
+.header-puzzle3 {
+  background-image: url("../img/puzzles/fon3.png");
+}
+
 .wrapper {
   max-width: 1197px;
   margin: auto;
 }
 
 .puzzle__title {
-  max-width: 230px;
+  max-width: 740px;
   margin: auto;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .puzzle__container {
@@ -738,6 +763,11 @@ h3 {
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
+}
+
+.transition__image {
+  width: 300px;
+  height: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */

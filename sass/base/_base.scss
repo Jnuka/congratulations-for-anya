@@ -1,14 +1,39 @@
 html {
-    font-size: 10px;
-    background-image: url("../img/puzzles/fon1.png");
+    font-size: 10px;    
 }
 
 body {
     @extend %font-default;
     @include font($size: 1.6rem, $height: 2.6rem, $weight: bold); 
-    
     padding-bottom: 30px;
 }
+
+//фон с конфетами
+.body-puzzle1 {
+    background-image: url("../img/puzzles/fon1.png");
+}
+
+//фон с перьями
+.body-puzzle3 {
+    background-image: url("../img/puzzles/fon3.png");
+}
+
+//фон собаки
+.body-puzzle5 {
+    //background-image: url("../img/puzzles/fon1.png");
+}
+
+//фон с огонем
+.body-puzzle7 {
+    //background-image: url("../img/puzzles/fon3.png");
+}
+
+//фон с шахматными фигурами
+.body-puzzle9 {
+    //background-image: url("../img/puzzles/fon1.png");
+}
+
+
 
 h1 {
     @extend %font-default;

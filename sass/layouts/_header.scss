@@ -2,15 +2,7 @@
     background: $color-light;
     // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
     padding: 42px 0;
-    background-image: url("../img/puzzles/fon1.png");
-}
-
-.container {
-    margin: 0 30px;
-    background-color: white;
-    border-radius: 80px;
-    border: 5px solid pink;
-    padding: 20px 0;
+    //background-image: url("../img/puzzles/fon1.png");
 }
 
 .header__title {
@@ -24,3 +16,32 @@
     }
 }
 
+//фон с конфетами
+.header-puzzle1 {
+    background-image: url("../img/puzzles/fon1.png");
+}
+
+//фон с перьями
+.header-puzzle3 {
+    background-image: url("../img/puzzles/fon3.png");
+}
+
+//фон собаки
+.header-puzzle5 {
+    //background-image: url("../img/puzzles/fon3.png");
+}
+
+//фон с огонем
+.header-puzzle7 {
+    //background-image: url("../img/puzzles/fon3.png");
+}
+
+//фон с шахматными фигурами
+.header-puzzle9 {
+    //background-image: url("../img/puzzles/fon3.png");
+}
+
+//нейтральный фон для поздравления
+.header-puzzle11 {
+    //background-image: url("../img/puzzles/fon3.png");
+}
