@@ -1,14 +1,50 @@
+.puzzle_button {
+    min-width: 583px;    
+    @include media-mobileL {
+        min-width: 335px;
+    }
+    @include media-mobileM {
+        min-width: 285px;
+    }
+    @include media-mobileS {
+        min-width: 230px;
+    }
+}
+
 .button {
     @extend %font-default;
     padding: 11px 50px;    
     background-color: $color-light;
-    border-radius: 10px;
-    border: 1px solid $color-additional;    
+    border-radius: 10px;     
+    // opacity: 0.5;
+    &-puzzle1 {
+        @include border-buttons($color-lolipop);
+    }
+    &-puzzle3 {
+        @include border-buttons($color-feather);
+    }
+    &-puzzle5 {
+        @include border-buttons($color-dog); 
+    }
+    &-puzzle7 {
+        @include border-buttons($color-fire);
+    }
+    &-puzzle9 {
+        @include border-buttons($color-dice);
+    }    
 }
 
-.button-img {
-    width: 50px;
-    height: 50px;
+
+.button-send {
+    margin-top: 20px;
+    // text-decoration: none;
+    // color: $color-primary;
+}
+
+.button-help {
+    margin-top: 20px;
+    // text-decoration: none;
+    // color: $color-primary;
 }
 
 .button-next {
