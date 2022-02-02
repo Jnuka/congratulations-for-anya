@@ -1,21 +1,16 @@
 .puzzle_button {
-    min-width: 583px;    
-    @include media-mobileL {
-        min-width: 335px;
-    }
-    @include media-mobileM {
-        min-width: 285px;
-    }
-    @include media-mobileS {
-        min-width: 230px;
-    }
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .button {
     @extend %font-default;
     padding: 11px 50px;    
     background-color: $color-light;
-    border-radius: 10px;     
+    border-radius: 10px;   
+    margin: 0 20px;  
     // opacity: 0.5;
     &-puzzle1 {
         @include border-buttons($color-lolipop);
@@ -34,17 +29,14 @@
     }    
 }
 
-
-.button-send {
-    margin-top: 20px;
-    // text-decoration: none;
-    // color: $color-primary;
-}
-
 .button-help {
     margin-top: 20px;
-    // text-decoration: none;
-    // color: $color-primary;
+    @include media-content {
+        min-width: 582px;
+    }
+    @include media-tableM {
+        min-width: 0;
+    }    
 }
 
 .button-next {
