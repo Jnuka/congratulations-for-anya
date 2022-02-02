@@ -1,0 +1,22 @@
+.table {
+    font-size: 25px;
+    margin: 0 20px;
+	border: 1px solid $color-dog;
+	border-collapse: collapse; 
+    @include media-laptop {
+        display: none;
+    }
+}
+.table th {
+	font-weight: bold;
+	background: $bg-dog;
+	border: 1px solid $color-dog;
+    text-align: center;
+    padding: 5px;
+    //width: 5%;
+}
+.table td {
+	border: 1px solid $color-dog;
+	padding: 5px;
+    text-align: center;
+}

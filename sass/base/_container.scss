@@ -3,30 +3,30 @@
     margin: 0 30px;
     background-color: white;
     border-radius: 80px;
-    padding: 20px 0;    
+    padding: 30px 0;    
 }
 
 //фон с конфетами
 .container-pizzle1 {
-    border: 5px solid pink;
+    border: 5px solid $color-lolipop;
 }
 
 //фон с перьями
 .container-pizzle3 {
-    border: 5px solid #422521;
+    border: 5px solid $color-feather;
 }
 
 //фон собаки
 .container-pizzle5 {
-    border: 5px solid #524439;
+    border: 5px solid $color-dog;
 }
 
 //фон с огонем
 .container-pizzle7 {
-    border: 5px solid #941c0c;
+    border: 5px solid $color-fire;
 }
 
 //фон с шахматными фигурами
 .container-pizzle9 {
-    border: 5px solid #d1bf19;
+    border: 5px solid $color-dice;
 }

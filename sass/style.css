@@ -459,6 +459,22 @@ h1 {
   font-weight: 400;
   font-style: normal;
 }
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: bold;
+    font-style: normal;
+  }
+}
+@media (max-width: 475px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: bold;
+    font-style: normal;
+  }
+}
 
 h2 {
   font-size: 3.4rem;
@@ -481,17 +497,102 @@ h3 {
   font-weight: 400;
   font-style: normal;
 }
+@media (max-width: 475px) {
+  h3 {
+    font-size: 1.9rem;
+    line-height: 3rem;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+@media (max-width: 375px) {
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+@media (max-width: 320px) {
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+.puzzle_button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 
 .button {
   padding: 11px 50px;
   background-color: #ffffff;
   border-radius: 10px;
-  border: 1px solid #FF7549;
+  margin: 0 20px;
+}
+.button-puzzle1 {
+  color: pink;
+  opacity: 0.5;
+  border: 3px solid pink;
+}
+.button-puzzle1:hover, .button-puzzle1:focus {
+  border-color: pink;
+  opacity: 1;
+}
+.button-puzzle3 {
+  color: #422521;
+  opacity: 0.5;
+  border: 3px solid #422521;
+}
+.button-puzzle3:hover, .button-puzzle3:focus {
+  border-color: #422521;
+  opacity: 1;
+}
+.button-puzzle5 {
+  color: rgba(85, 65, 49, 0.8);
+  opacity: 0.5;
+  border: 3px solid rgba(85, 65, 49, 0.8);
+}
+.button-puzzle5:hover, .button-puzzle5:focus {
+  border-color: rgba(85, 65, 49, 0.8);
+  opacity: 1;
+}
+.button-puzzle7 {
+  color: #941c0c;
+  opacity: 0.5;
+  border: 3px solid #941c0c;
+}
+.button-puzzle7:hover, .button-puzzle7:focus {
+  border-color: #941c0c;
+  opacity: 1;
+}
+.button-puzzle9 {
+  color: #d1bf19;
+  opacity: 0.5;
+  border: 3px solid #d1bf19;
+}
+.button-puzzle9:hover, .button-puzzle9:focus {
+  border-color: #d1bf19;
+  opacity: 1;
 }
 
-.button-img {
-  width: 50px;
-  height: 50px;
+.button-help {
+  margin-top: 20px;
+}
+@media (max-width: 2560px) {
+  .button-help {
+    min-width: 582px;
+  }
+}
+@media (max-width: 676px) {
+  .button-help {
+    min-width: 0;
+  }
 }
 
 .button-next {
@@ -511,9 +612,7 @@ h3 {
 }
 
 .dlg-modal {
-  width: 100%;
   max-width: 570px;
-  height: 50%;
   opacity: 0;
   visibility: hidden;
   text-align: center;
@@ -553,7 +652,7 @@ h3 {
   margin: 0 30px;
   background-color: white;
   border-radius: 80px;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 .container-pizzle1 {
@@ -565,7 +664,7 @@ h3 {
 }
 
 .container-pizzle5 {
-  border: 5px solid #524439;
+  border: 5px solid rgba(85, 65, 49, 0.8);
 }
 
 .container-pizzle7 {
@@ -584,22 +683,6 @@ h3 {
 .header__title {
   text-align: center;
   margin: 0 20px;
-}
-@media (max-width: 768px) {
-  .header__title {
-    font-size: 3.5rem;
-    line-height: 3.5rem;
-    font-weight: bold;
-    font-style: normal;
-  }
-}
-@media (max-width: 475px) {
-  .header__title {
-    font-size: 2rem;
-    line-height: 2rem;
-    font-weight: bold;
-    font-style: normal;
-  }
 }
 
 .header-puzzle1 {
@@ -631,7 +714,7 @@ h3 {
   max-width: 740px;
   margin: auto;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .puzzle__container {
@@ -642,85 +725,206 @@ h3 {
 }
 
 .puzzle__task {
-  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 30px;
+  margin-bottom: 30px;
 }
 
 .puzzle__image {
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+.puzzle__image-puzle1 {
+  width: 70%;
+}
+.puzzle__image-puzzle2 {
+  width: 40%;
 }
 @media (max-width: 475px) {
-  .puzzle__image {
-    width: 350px;
-    height: 350px;
+  .puzzle__image-puzzle2 {
+    width: 100%;
   }
 }
 @media (max-width: 375px) {
-  .puzzle__image {
-    width: 300px;
-    height: 300px;
+  .puzzle__image-puzzle2 {
+    width: 100%;
   }
 }
 @media (max-width: 320px) {
-  .puzzle__image {
-    width: 250px;
-    height: 250px;
+  .puzzle__image-puzzle2 {
+    width: 100%;
+  }
+}
+.puzzle__image-puzzle4 {
+  width: 30%;
+}
+@media (max-width: 475px) {
+  .puzzle__image-puzzle5 {
+    width: 290px;
+  }
+}
+@media (max-width: 375px) {
+  .puzzle__image-puzzle5 {
+    width: 243px;
+  }
+}
+.puzzle__image-puzzle6 {
+  width: 40%;
+}
+@media (max-width: 768px) {
+  .puzzle__image-puzzle6 {
+    width: 50%;
+  }
+}
+@media (max-width: 475px) {
+  .puzzle__image-puzzle6 {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .puzzle__image-puzzle6 {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .puzzle__image-puzzle6 {
+    width: 100%;
+  }
+}
+.puzzle__image-puzzle8 {
+  width: 55%;
+}
+.puzzle__image-puzzle10 {
+  width: 40%;
+}
+
+.puzzle__form {
+  width: 100%;
+}
+@media (max-width: 2560px) {
+  .puzzle__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 .puzzle_text {
   max-width: 800px;
+  width: 100%;
   text-align: center;
+  margin: 0;
+}
+@media (max-width: 2560px) {
+  .puzzle_text-puzzle5 {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .puzzle_text-puzzle5 {
+    display: block;
+  }
 }
 
-.puzzle__form {
-  width: 50%;
-}
-.puzzle__form input {
-  border: 1px solid #ffffff;
-  background-color: #ffffff;
-  padding: 10px 21px;
-  border-radius: 5px;
-  border-color: #FF9900;
-}
-.puzzle__form input:focus {
-  border-color: #FF9900;
-  outline: none;
+.puzzle__answer {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  text-align: center;
 }
 
 .puzzle__input {
   width: 100%;
-  margin-bottom: 20px;
+  margin: 0 20px;
+}
+.puzzle__input-puzzle1 {
+  border: 3px solid pink;
+  background-color: #ffffff;
+  padding: 10px 21px;
+  border-radius: 10px;
+  opacity: 0.5;
+  border-color: pink;
+}
+.puzzle__input-puzzle1:hover, .puzzle__input-puzzle1:focus {
+  border-color: pink;
+  outline: none;
+  opacity: 1;
+}
+.puzzle__input-puzzle3 {
+  border: 3px solid #422521;
+  background-color: #ffffff;
+  padding: 10px 21px;
+  border-radius: 10px;
+  opacity: 0.5;
+  border-color: #422521;
+}
+.puzzle__input-puzzle3:hover, .puzzle__input-puzzle3:focus {
+  border-color: #422521;
+  outline: none;
+  opacity: 1;
+}
+.puzzle__input-puzzle5 {
+  border: 3px solid rgba(85, 65, 49, 0.8);
+  background-color: #ffffff;
+  padding: 10px 21px;
+  border-radius: 10px;
+  opacity: 0.5;
+  border-color: rgba(85, 65, 49, 0.8);
+}
+.puzzle__input-puzzle5:hover, .puzzle__input-puzzle5:focus {
+  border-color: rgba(85, 65, 49, 0.8);
+  outline: none;
+  opacity: 1;
+}
+.puzzle__input-puzzle7 {
+  border: 3px solid #941c0c;
+  background-color: #ffffff;
+  padding: 10px 21px;
+  border-radius: 10px;
+  opacity: 0.5;
+  border-color: #941c0c;
+}
+.puzzle__input-puzzle7:hover, .puzzle__input-puzzle7:focus {
+  border-color: #941c0c;
+  outline: none;
+  opacity: 1;
+}
+.puzzle__input-puzzle9 {
+  border: 3px solid #d1bf19;
+  background-color: #ffffff;
+  padding: 10px 21px;
+  border-radius: 10px;
+  opacity: 0.5;
+  border-color: #d1bf19;
+}
+.puzzle__input-puzzle9:hover, .puzzle__input-puzzle9:focus {
+  border-color: #d1bf19;
+  outline: none;
+  opacity: 1;
 }
 
-.puzzle_button {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.button-send {
-  margin-top: 20px;
-  text-decoration: none;
-  color: #FF9900;
-}
-
-.button-help {
-  margin-top: 20px;
-  text-decoration: none;
-  color: #FF9900;
-}
-
-.button-img {
-  text-align: center;
-}
-
-.puzzle__one {
+.modal__one {
   border-radius: 80px;
   border: 5px solid pink;
+}
+.modal__three {
+  border-radius: 80px;
+  border: 5px solid #422521;
+}
+.modal__five {
+  border-radius: 80px;
+  border: 5px solid rgba(85, 65, 49, 0.8);
+}
+.modal__seven {
+  border-radius: 80px;
+  border: 5px solid #941c0c;
+}
+.modal__nine {
+  border-radius: 80px;
+  border: 5px solid #d1bf19;
 }
 
 /* animation */
@@ -804,6 +1008,37 @@ h3 {
 .transition__image {
   width: 300px;
   height: 300px;
+}
+
+.transition__image-fire {
+  width: 200px;
+  height: 300px;
+}
+
+.table {
+  font-size: 25px;
+  margin: 0 20px;
+  border: 1px solid rgba(85, 65, 49, 0.8);
+  border-collapse: collapse;
+}
+@media (max-width: 1024px) {
+  .table {
+    display: none;
+  }
+}
+
+.table th {
+  font-weight: bold;
+  background: #FFEFE3;
+  border: 1px solid rgba(85, 65, 49, 0.8);
+  text-align: center;
+  padding: 5px;
+}
+
+.table td {
+  border: 1px solid rgba(85, 65, 49, 0.8);
+  padding: 5px;
+  text-align: center;
 }
 
 .bounce {

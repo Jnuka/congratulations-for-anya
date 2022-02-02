@@ -1,14 +1,42 @@
+.puzzle_button {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 .button {
     @extend %font-default;
     padding: 11px 50px;    
     background-color: $color-light;
-    border-radius: 10px;
-    border: 1px solid $color-additional;    
+    border-radius: 10px;   
+    margin: 0 20px;  
+    // opacity: 0.5;
+    &-puzzle1 {
+        @include border-buttons($color-lolipop);
+    }
+    &-puzzle3 {
+        @include border-buttons($color-feather);
+    }
+    &-puzzle5 {
+        @include border-buttons($color-dog); 
+    }
+    &-puzzle7 {
+        @include border-buttons($color-fire);
+    }
+    &-puzzle9 {
+        @include border-buttons($color-dice);
+    }    
 }
 
-.button-img {
-    width: 50px;
-    height: 50px;
+.button-help {
+    margin-top: 20px;
+    @include media-content {
+        min-width: 582px;
+    }
+    @include media-tableM {
+        min-width: 0;
+    }    
 }
 
 .button-next {

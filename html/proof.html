@@ -23,16 +23,16 @@
                     <h2 class="puzzle__title">Загадка №3</h2>
                     <div class="puzzle__container">
                         <div class="puzzle__task">                    
-                            <img class="puzzle__image" src="../img/puzzles/puzzle3.jpg" alt="puzzel-three">                                
+                            <img class="puzzle__image" src="../img/puzzles/puzzle3.svg" alt="puzzel-three">                                
                         </div>
                         <div class="puzzle__form">
                             <form id="answer_form">
                                 <div class="puzzle__answer">
-                                    <input id="input" class="puzzle__input" type="text" name="answer" placeholder="Твой Ответ">
+                                    <input id="input" class="puzzle__input puzzle__input-puzzle3" type="text" name="answer" placeholder="Твой Ответ">
                                 </div> 
                                 <div class="puzzle_button">                                   
-                                    <button id="submit_button" class="button button-send">Проверить</button>
-                                    <button id="button-help" type="button" data-modal="help_modal" class="button button-help">Подсказка</button>
+                                    <button id="submit_button" class="button button-puzzle3 button-send">Проверить</button>
+                                    <button id="button-help" type="button" data-modal="help_modal" class="button button-puzzle3 button-help">Подсказка</button>
                                 </div>                                   
                             </form>
                         </div>
@@ -42,14 +42,13 @@
         </div>
     </section>    
     <div class="overlay" data-close=""></div>
-    <div id="help_modal" class="dlg-modal dlg-modal-fade puzzle__one">
+    <div id="help_modal" class="dlg-modal dlg-modal-fade modal__three">
 		<span class="closer" data-close=""></span>
 		<h2 class="help__title">Подсказки:</h2>
-        <h3 id="help_1" class="help_1">1. Разве это не шифр того знаменитого парня?</h3>
-        <h3 id="help_2" class="help_2">2. Тебе нравится салат цезарь?</h3>   
-        <h3 id="help_3" class="help_3">3. Похоже на шифр цезаря со сдвигом в 4 буквы вперёд :S</h3>    
-	</div>
-
+        <h3 id="help_1" class="help_1">1. Это домино или буквы?</h3>
+        <h3 id="help_2" class="help_2">2. Ты слишком слеп, чтобы увидеть ответ?)</h3>   
+        <h3 id="help_3" class="help_3">3. Похоже на алфавит Брайля</h3>    
+	</div>    
 </body>
 <script>const stage = 'stage1';</script>
 <script>const nextPage = 'tractor.html';</script>

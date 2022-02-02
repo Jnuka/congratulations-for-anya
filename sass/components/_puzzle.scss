@@ -2,88 +2,144 @@
     max-width: 740px;
     margin: auto;
     text-align: center;
-    margin-bottom: 50px;    
+    margin-bottom: 20px;    
 }
 
 .puzzle__container {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: center;       
 }
 
 .puzzle__task {
-    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;  
+    margin: 0 30px; 
+    margin-bottom: 30px; 
 }
 
 .puzzle__image {
-    width: 500px;
-    height: 500px;
-    @include media-mobileL {
-        width: 350px;
-        height: 350px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    &-puzle1 {
+        @include width-for-img (70%);       
     }
-    @include media-mobileM {
-        width: 300px;
-        height: 300px;
+    &-puzzle2 {
+        @include width-for-img (40%);
+        @include media-mobileL {
+            @include width-for-img (100%);
+        }
+        @include media-mobileM {
+            @include width-for-img (100%);
+        }
+        @include media-mobileS {
+            @include width-for-img (100%);
+        }
     }
-    @include media-mobileS {
-        width: 250px;
-        height: 250px;
+    &-puzzle4 {
+        @include width-for-img (30%);
+    }
+    &-puzzle5 {
+        @include media-mobileL {
+            width: 290px;
+        }
+        @include media-mobileM {
+            width: 243px;
+        }
+    }
+    &-puzzle6 {
+        @include width-for-img (40%);
+        @include media-table {
+            @include width-for-img (50%);
+        }
+        @include media-mobileL {
+            @include width-for-img (100%);
+        }
+        @include media-mobileM {
+            @include width-for-img (100%);
+        }
+        @include media-mobileS {
+            @include width-for-img (100%);
+        }
+    }
+    &-puzzle8 {
+        @include width-for-img (55%);
+    }
+    &-puzzle10 {
+        @include width-for-img (40%);
+    }
+    
+}
+
+.puzzle__form {
+    width: 100%;
+    @include media-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 .puzzle_text {
     max-width: 800px;
+    width: 100%;    
+    text-align: center;
+    margin: 0;
+    &-puzzle5 {
+        @include media-content {
+            display: none;
+        }
+        @include media-laptop {
+            display: block;
+        }
+    }    
+}
+
+.puzzle__answer {
+    width: 100%; 
+    margin-bottom: 40px;
+    display: flex;
     text-align: center;
 }
 
-.puzzle__form {
-    width: 50%;
-    input {
-        border: 1px solid $color-light;
-        background-color: $color-light;
-        padding:  10px 21px;
-        border-radius: 5px;  
-        border-color: $color-primary;
-        &:focus {
-            border-color: $color-primary;
-            outline: none;
-        }      
+.puzzle__input{ 
+    width: 100%;    
+    margin: 0 20px;
+    &-puzzle1 {
+        @include border-inputs($color-lolipop);
+    }
+    &-puzzle3 {
+        @include border-inputs($color-feather);
+    }
+    &-puzzle5 {
+        @include border-inputs($color-dog); 
+    }
+    &-puzzle7 {
+        @include border-inputs($color-fire);
+    }
+    &-puzzle9 {
+        @include border-inputs($color-dice);
     }
 }
 
-.puzzle__input {
-    width: 100%;
-    margin-bottom: 20px;
+.modal {
+    &__one {
+        @include modal-puzzle($color-lolipop);
+    }
+    &__three {
+        @include modal-puzzle($color-feather);
+    }
+    &__five {
+        @include modal-puzzle($color-dog);
+    }
+    &__seven {
+        @include modal-puzzle($color-fire);
+    }
+    &__nine {
+        @include modal-puzzle($color-dice);
+    }
 }
-
-.puzzle_button {
-    display: flex;
-    flex-direction: column;
-    text-align: center;    
-}
-
-.button-send {
-    margin-top: 20px;
-    text-decoration: none;
-    color: $color-primary;
-}
-
-.button-help {
-    margin-top: 20px;
-    text-decoration: none;
-    color: $color-primary;
-}
-
-.button-img {
-    text-align: center;
-}
-
-.puzzle__one {
-    border-radius: 80px;
-    border: 5px solid pink;
-}
+   

@@ -18,21 +18,83 @@
     </header>
     <section class="puzzle">
         <div class="wrapper">
-            <div class="container container-pizzle3">
+            <div class="container container-pizzle5">
                 <div class="puzzle__direction">
                     <h2 class="puzzle__title">Загадка №5</h2>
                     <div class="puzzle__container">
                         <div class="puzzle__task">                    
-                            <img class="puzzle__image" src="../img/puzzles/puzzle3.png" alt="puzzel-three">                                
+                            <img class="puzzle__image puzzle__image-puzzle5" src="../img/puzzles/puzzle5.svg" alt="puzzel-three">
+                            <table class="table">
+                                <tr>
+                                    <th>Шифр</th>
+                                    <td>о</td>
+                                    <td>ф</td>
+                                    <td>ц</td>
+                                    <td>ъ</td>
+                                    <td>п</td>
+                                    <td>о</td>
+                                    <td>я</td>
+                                    <td>у</td>
+                                    <td>у</td>
+                                    <td>ю</td>
+                                    <td>е</td>
+                                    <td>я</td>
+                                    <td>к</td>
+                                    <td>с</td>
+                                    <td>п</td>
+                                    <td>ь</td>
+                                    <td>ч</td>
+                                    <td>ъ</td>
+                                    <td>ь</td>
+                                    <td>с</td>
+                                    <td>о</td>
+                                    <td>х</td>
+                                    <td>д</td>
+                                    <td>е</td>
+                                    <td>а</td>
+                                    <td>й</td>
+                                </tr>
+                                <tr>
+                                    <th>Ключ</th>
+                                    <td>я</td>
+                                    <td>б</td>
+                                    <td>е</td>
+                                    <td>з</td>
+                                    <td>у</td>
+                                    <td>м</td>
+                                    <td>н</td>
+                                    <td>о</td>
+                                    <td>л</td>
+                                    <td>ю</td>
+                                    <td>б</td>
+                                    <td>л</td>
+                                    <td>ю</td>
+                                    <td>с</td>
+                                    <td>в</td>
+                                    <td>о</td>
+                                    <td>и</td>
+                                    <td>х</td>
+                                    <td>к</td>
+                                    <td>р</td>
+                                    <td>ы</td>
+                                    <td>с</td>
+                                    <td>я</td>
+                                    <td>т</td>
+                                    <td>о</td>
+                                    <td>к</td>
+                                </tr> 
+                            </table>
+                            <h3 class="puzzle_text puzzle_text-puzzle5">Шифр: офцъпояууюеякспьчъьсохдеай <br> Ключ: ябезумнолюблюсвоихкрысяток</h3>
                         </div>
+                        
                         <div class="puzzle__form">
                             <form id="answer_form">
                                 <div class="puzzle__answer">
-                                    <input id="input" class="puzzle__input" type="text" name="answer" placeholder="Твой Ответ">
+                                    <input id="input" class="puzzle__input puzzle__input-puzzle5" type="text" name="answer" placeholder="Твой Ответ">
                                 </div> 
                                 <div class="puzzle_button">                                   
-                                    <button id="submit_button" class="button button-send">Проверить</button>
-                                    <button id="button-help" type="button" data-modal="help_modal" class="button button-help">Подсказка</button>
+                                    <button id="submit_button" class="button button-puzzle5 button-send">Проверить</button>
+                                    <button id="button-help" type="button" data-modal="help_modal" class="button button-puzzle5 button-help">Подсказка</button>
                                 </div>                                   
                             </form>
                         </div>
@@ -42,12 +104,12 @@
         </div>
     </section>    
     <div class="overlay" data-close=""></div>
-    <div id="help_modal" class="dlg-modal dlg-modal-fade puzzle__one">
+    <div id="help_modal" class="dlg-modal dlg-modal-fade modal__five">
 		<span class="closer" data-close=""></span>
 		<h2 class="help__title">Подсказки:</h2>
-        <h3 id="help_1" class="help_1">1. Разве это не шифр того знаменитого парня?</h3>
-        <h3 id="help_2" class="help_2">2. Тебе нравится салат цезарь?</h3>   
-        <h3 id="help_3" class="help_3">3. Похоже на шифр цезаря со сдвигом в 4 буквы вперёд :S</h3>    
+        <h3 id="help_1" class="help_1">1. Тот, кто придумал такое шифрование явно был "визионером" свеого времени)</h3>
+        <h3 id="help_2" class="help_2">2. Есть подозрение, что каким-то образом буквы из шифра и ключа можно сопоставить.</h3>   
+        <h3 id="help_3" class="help_3">3. Это шифр Виженера. Необходимо взять строку, соответсвующую букве из ключа и найти в ней букву соответсвуей букве из шифра. Столбец в котором обнаружена буква из шифра и есть искомая буква ответа.</h3>    
 	</div>
 
 </body>

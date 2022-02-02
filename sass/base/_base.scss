@@ -33,11 +33,15 @@ body {
     background-image: url("../img/puzzles/fon9.png");
 }
 
-
-
 h1 {
     @extend %font-default;
-    @include font($size: 4.0rem, $height: 5.0rem, $weight: 400); 
+    @include font($size: 4.0rem, $height: 5.0rem, $weight: 400);
+    @include media-table {
+        @include font($size: 3.0rem);
+    }
+    @include media-mobileL {
+        @include font($size: 2.0rem);
+    }
 }
 
 h2 {
@@ -51,5 +55,13 @@ h2 {
 h3 {
     @extend %font-default;
     @include font($size: 2.5rem, $height: 3.8rem, $weight: 400);
-    
+    @include media-mobileL {
+        @include font($size: 1.9rem, $height: 3.0rem, $weight: 400);
+    }
+    @include media-mobileM {
+        @include font($size: 1.5rem, $height: 1.9rem, $weight: 400);
+    }
+    @include media-mobileS {
+        @include font($size: 1.5rem, $height: 2.6rem, $weight: 400);
+    }
 }
