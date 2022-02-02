@@ -88,8 +88,8 @@ form.addEventListener('submit', function (event) {
   event.preventDefault();
 
   if (testInput(stage, input.value)) {
-    // window.location.href = nextPage;
-    console.log("Yes");
+    window.location.href = nextPage;
+    // console.log("Yes");
 
   } else {
     input.classList.add("bounce");
