@@ -33,6 +33,11 @@ body {
     background-image: url("../img/puzzles/fon9.png");
 }
 
+//фон с шахматными фигурами
+.body-puzzle-final {
+    background-color: $color-final-blue;
+}
+
 h1 {
     @extend %font-default;
     @include font($size: 4.0rem, $height: 5.0rem, $weight: 400);

@@ -1,8 +1,6 @@
 .header {
     background: $color-light;
-    // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
     padding: 42px 0;
-    //background-image: url("../img/puzzles/fon1.png");
 }
 
 .header__title {
@@ -36,6 +34,7 @@
 }
 
 //нейтральный фон для поздравления
-.header-puzzle11 {
-    //background-image: url("../img/puzzles/fon3.png");
+.header-puzzle-final {
+    background-color: $color-final-blue;
 }
+

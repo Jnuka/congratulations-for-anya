@@ -461,6 +461,10 @@ body {
   background-image: url("../img/puzzles/fon9.png");
 }
 
+.body-puzzle-final {
+  background-color: #364969;
+}
+
 h1 {
   font-size: 4rem;
   line-height: 5rem;
@@ -693,6 +697,10 @@ h3 {
   border: 5px solid #d1bf19;
 }
 
+.container-pizzle-final {
+  border: 5px solid #c0ced1;
+}
+
 .header {
   background: #ffffff;
   padding: 42px 0;
@@ -721,6 +729,10 @@ h3 {
 
 .header-puzzle9 {
   background-image: url("../img/puzzles/fon9.png");
+}
+
+.header-puzzle-final {
+  background-color: #364969;
 }
 
 .wrapper {
