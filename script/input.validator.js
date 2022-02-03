@@ -65,7 +65,7 @@ let input = document.getElementById('input')
 
 form.addEventListener('submit', function (event) {
   event.preventDefault();
-
+  // window.location.href = nextPage;
   if (testInput(stage, input.value)) {
     console.log("It's correct");
     window.location.href = nextPage;
