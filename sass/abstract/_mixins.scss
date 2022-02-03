@@ -10,24 +10,25 @@
     background-color: $color-light;
     padding:  10px 21px;
     border-radius: 10px;  
-    opacity: 0.5;
+    // opacity: 0.5;
     border-color: $color;
     &:hover,
     &:focus {
         border-color: $color;
         outline: none;
-        opacity: 1;
+        // opacity: 1;
     }    
 }
 
 @mixin border-buttons ($color) {
-    color: $color;
-    opacity: 0.5;
+    // color: $color;
+    color: $color-text-black;
+    // opacity: 0.5;
     border: 3px solid $color;
         &:hover,
         &:focus {
             border-color: $color;
-            opacity: 1;
+            // opacity: 1;
         }    
 }
 

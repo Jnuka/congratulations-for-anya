@@ -536,49 +536,39 @@ h3 {
   margin: 0 20px;
 }
 .button-puzzle1 {
-  color: pink;
-  opacity: 0.5;
+  color: black;
   border: 3px solid pink;
 }
 .button-puzzle1:hover, .button-puzzle1:focus {
   border-color: pink;
-  opacity: 1;
 }
 .button-puzzle3 {
-  color: #422521;
-  opacity: 0.5;
+  color: black;
   border: 3px solid #422521;
 }
 .button-puzzle3:hover, .button-puzzle3:focus {
   border-color: #422521;
-  opacity: 1;
 }
 .button-puzzle5 {
-  color: rgba(85, 65, 49, 0.8);
-  opacity: 0.5;
+  color: black;
   border: 3px solid rgba(85, 65, 49, 0.8);
 }
 .button-puzzle5:hover, .button-puzzle5:focus {
   border-color: rgba(85, 65, 49, 0.8);
-  opacity: 1;
 }
 .button-puzzle7 {
-  color: #941c0c;
-  opacity: 0.5;
+  color: black;
   border: 3px solid #941c0c;
 }
 .button-puzzle7:hover, .button-puzzle7:focus {
   border-color: #941c0c;
-  opacity: 1;
 }
 .button-puzzle9 {
-  color: #d1bf19;
-  opacity: 0.5;
+  color: black;
   border: 3px solid #d1bf19;
 }
 .button-puzzle9:hover, .button-puzzle9:focus {
   border-color: #d1bf19;
-  opacity: 1;
 }
 
 .button-help {
@@ -845,65 +835,55 @@ h3 {
   background-color: #ffffff;
   padding: 10px 21px;
   border-radius: 10px;
-  opacity: 0.5;
   border-color: pink;
 }
 .puzzle__input-puzzle1:hover, .puzzle__input-puzzle1:focus {
   border-color: pink;
   outline: none;
-  opacity: 1;
 }
 .puzzle__input-puzzle3 {
   border: 3px solid #422521;
   background-color: #ffffff;
   padding: 10px 21px;
   border-radius: 10px;
-  opacity: 0.5;
   border-color: #422521;
 }
 .puzzle__input-puzzle3:hover, .puzzle__input-puzzle3:focus {
   border-color: #422521;
   outline: none;
-  opacity: 1;
 }
 .puzzle__input-puzzle5 {
   border: 3px solid rgba(85, 65, 49, 0.8);
   background-color: #ffffff;
   padding: 10px 21px;
   border-radius: 10px;
-  opacity: 0.5;
   border-color: rgba(85, 65, 49, 0.8);
 }
 .puzzle__input-puzzle5:hover, .puzzle__input-puzzle5:focus {
   border-color: rgba(85, 65, 49, 0.8);
   outline: none;
-  opacity: 1;
 }
 .puzzle__input-puzzle7 {
   border: 3px solid #941c0c;
   background-color: #ffffff;
   padding: 10px 21px;
   border-radius: 10px;
-  opacity: 0.5;
   border-color: #941c0c;
 }
 .puzzle__input-puzzle7:hover, .puzzle__input-puzzle7:focus {
   border-color: #941c0c;
   outline: none;
-  opacity: 1;
 }
 .puzzle__input-puzzle9 {
   border: 3px solid #d1bf19;
   background-color: #ffffff;
   padding: 10px 21px;
   border-radius: 10px;
-  opacity: 0.5;
   border-color: #d1bf19;
 }
 .puzzle__input-puzzle9:hover, .puzzle__input-puzzle9:focus {
   border-color: #d1bf19;
   outline: none;
-  opacity: 1;
 }
 
 .modal__one {
