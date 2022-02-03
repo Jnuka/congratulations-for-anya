@@ -4,6 +4,9 @@
     animation-duration: 0.75s;
     animation-delay: 0.05s;
     border-color: red;
+    &:focus {
+      border-color: red;
+    }
   }
 
   /* This approximates the ease-in-out-bounce animation from easings.net, which would require a plug-in to use*/

@@ -32,6 +32,12 @@
         }    
 }
 
+@mixin hover-buttons ($color) {
+    background-color: $color;
+    color: $color-light;
+    @extend %transition;
+}
+
 @mixin modal-puzzle ($color) {
     border-radius: 80px;
     border: 5px solid $color;
