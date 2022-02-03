@@ -1,8 +1,19 @@
 .puzzle__title {
+    max-width: 885px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px; 
+    @extend %font-add;   
+}
+
+.puzzle__description {
     max-width: 740px;
     margin: auto;
     text-align: center;
-    margin-bottom: 20px;     
+    margin-bottom: 20px;    
+    &-level {
+        text-transform: uppercase;
+    }
 }
 
 .puzzle__container {
@@ -17,7 +28,27 @@
     flex-direction: column;
     align-items: center;  
     margin: 0 30px; 
-    margin-bottom: 30px; 
+    margin-bottom: 30px;    
+}
+
+.puzzle__films {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin: 0;   
+}
+
+
+.puzzle_film {    
+    &-easy {
+        color: $color-ease;
+    }
+    &-normal {
+        color: $color-normal;
+    }
+    &-hard {
+        color: $color-hard;
+    }
 }
 
 .puzzle__image {

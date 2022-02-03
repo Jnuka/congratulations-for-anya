@@ -3,7 +3,6 @@ nextStageBlock.style.visibility = "hidden";
 
 let button = document.getElementById("next_button");
 
-
 button.addEventListener("click", () => {
     nextStageBlock.style.visibility = "visible";
 });
