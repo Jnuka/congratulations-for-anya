@@ -46,8 +46,6 @@ function testInput(stage, input) {
     .map(i => i.replace('ё', 'е'))
     .map(i => toCharCodes(i));
 
-  console.log(inputArr);
-
   return isCorrect(inputArr, RESULT[stage]);
 }
 
