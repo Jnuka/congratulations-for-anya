@@ -21,9 +21,16 @@
             <div class="container container-pizzle7">
                 <div class="puzzle__direction">
                     <h2 class="puzzle__title">Загадка №7</h2>
+                    <h3 class="puzzle__title">
+                        Тебе даны антонимы к названям фильмов и сериалов. В ответ необходимо написать ориганльное название.<br>
+                        Уровень изи &#128516; <br>
+                        Эти чуть сложнее &#129299;<br>
+                        Пошла жара &#128520;
+                    </h3>
+                    
                     <div class="puzzle__container">
                         <div class="puzzle__task">                    
-                            <h3 class="puzzle_text">Вперед в будущее</h3>
+                            <h3 id="film_label" class="puzzle_film-easy"># ПРОДАМ ГАРАЖ</h3>
                         </div>
                         <div class="puzzle__form">
                             <form id="answer_form">
@@ -51,9 +58,10 @@
 	</div>
 
 </body>
-<script>const stage = 'stage1';</script>
+<script>const stage = 1;</script>
 <script>const nextPage = 'juniper.html';</script>
-<script src="../script/help.timer.js"></script>
+<script src="../script/film.help.timer.js"></script>
+<script src="../script/film.input.validator.js"></script>
+<script src="../script/film.page.resolver.js"></script>
 <script src="../script/popup.function.js"></script>
-<script src="../script/input.validator.js"></script>
 </html>
