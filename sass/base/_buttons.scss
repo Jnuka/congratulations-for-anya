@@ -11,22 +11,37 @@
     background-color: $color-light;
     border-radius: 10px;   
     margin: 0 20px;  
-    // opacity: 0.5;
+    // opacity: 0.5;    
     &-puzzle1 {
         @include border-buttons($color-lolipop);
+        &:hover {
+            @include hover-buttons($color-lolipop);
+        }
     }
     &-puzzle3 {
         @include border-buttons($color-feather);
+        &:hover {
+            @include hover-buttons($color-feather);
+        }
     }
     &-puzzle5 {
-        @include border-buttons($color-dog); 
+        @include border-buttons($color-dog);
+        &:hover {
+            @include hover-buttons($color-dog);
+        } 
     }
     &-puzzle7 {
         @include border-buttons($color-fire);
+        &:hover {
+            @include hover-buttons($color-fire);
+        }
     }
     &-puzzle9 {
         @include border-buttons($color-dice);
-    }    
+        &:hover {
+            @include hover-buttons($color-dice);
+        }
+    }
 }
 
 .button-help {

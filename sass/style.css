@@ -421,6 +421,10 @@ ul {
   font-family: "Source Serif 4", Verdana, sans-serif;
 }
 
+.button-puzzle9:hover, .button-puzzle7:hover, .button-puzzle5:hover, .button-puzzle3:hover, .button-puzzle1:hover {
+  transition: all 0.3s ease-out;
+}
+
 html {
   font-size: 10px;
 }
@@ -542,12 +546,20 @@ h3 {
 .button-puzzle1:hover, .button-puzzle1:focus {
   border-color: pink;
 }
+.button-puzzle1:hover {
+  background-color: pink;
+  color: #ffffff;
+}
 .button-puzzle3 {
   color: black;
   border: 3px solid #422521;
 }
 .button-puzzle3:hover, .button-puzzle3:focus {
   border-color: #422521;
+}
+.button-puzzle3:hover {
+  background-color: #422521;
+  color: #ffffff;
 }
 .button-puzzle5 {
   color: black;
@@ -556,6 +568,10 @@ h3 {
 .button-puzzle5:hover, .button-puzzle5:focus {
   border-color: rgba(85, 65, 49, 0.8);
 }
+.button-puzzle5:hover {
+  background-color: rgba(85, 65, 49, 0.8);
+  color: #ffffff;
+}
 .button-puzzle7 {
   color: black;
   border: 3px solid #941c0c;
@@ -563,12 +579,20 @@ h3 {
 .button-puzzle7:hover, .button-puzzle7:focus {
   border-color: #941c0c;
 }
+.button-puzzle7:hover {
+  background-color: #941c0c;
+  color: #ffffff;
+}
 .button-puzzle9 {
   color: black;
   border: 3px solid #d1bf19;
 }
 .button-puzzle9:hover, .button-puzzle9:focus {
   border-color: #d1bf19;
+}
+.button-puzzle9:hover {
+  background-color: #d1bf19;
+  color: #ffffff;
 }
 
 .button-help {
@@ -1026,6 +1050,9 @@ h3 {
   animation-name: bounce;
   animation-duration: 0.75s;
   animation-delay: 0.05s;
+  border-color: red;
+}
+.bounce:focus {
   border-color: red;
 }
 
