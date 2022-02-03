@@ -462,7 +462,7 @@ body {
 }
 
 .body-puzzle-final {
-  background-color: #364969;
+  background-image: url("../img/final/background4.png");
 }
 
 h1 {
@@ -732,7 +732,7 @@ h3 {
 }
 
 .header-puzzle-final {
-  background-color: #364969;
+  background-image: url("../img/final/background4.png");
 }
 
 .wrapper {
