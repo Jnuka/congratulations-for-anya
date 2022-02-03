@@ -84,18 +84,24 @@ form.addEventListener('submit', function (event) {
   event.preventDefault();
 
   if (testInput(stage, input.value)) {
-    console.log("It's correct");
-    stage += 1;
-    console.log("stage = " + stage);
+        console.log("It's correct");
+        stage += 1;
+        console.log("stage = " + stage);
 
-    if (stage > 25) {
-        console.log("Redirect to next page")
-        // window.location.href = nextPage;
+        input.value = "";
+
+        updateLabel();
+        resetTimer();
+
+        if (stage === 25) {
+            console.log("Redirect to next page")
+            window.location.href = nextPage;
+        }
+
+    } else {
+        input.classList.add("bounce");
+        setTimeout(function() {
+        input.classList.remove("bounce");
+        }, 1000); 
     }
-  } else {
-    input.classList.add("bounce");
-    setTimeout(function() {
-      input.classList.remove("bounce");
-    }, 1000); 
-  }
 })

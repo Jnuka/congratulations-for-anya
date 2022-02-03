@@ -131,7 +131,7 @@ const HELPS = {
     ]
 }; 
 
-const TIME = 60; // time in seconds
+const TIME = 3; // time in seconds
 
 const getHelpButtonNotReadyMsg = (time) => {return `Следующая подсказка будет доступна через ${time} секунд(ы)`};
 const HELP_IS_READY_MSG = "Доступна новая подсказка!";
@@ -142,7 +142,11 @@ const getHelpMsgs = (stage) => {
     let hints = HELPS[stage];
 
     for (let i = 0; i < hints.length; i++) {
-        arr[i] = String.fromCharCode(hints[i]);
+        let str = "";
+        for (let j = 0; j < hints[i].length; j++) {
+            str += String.fromCharCode(hints[i][j]);
+        }
+        arr[i] = str;
     } 
 
     return arr;
@@ -180,9 +184,10 @@ function resetTimer() {
     cliks = 0;
     helpButton.disabled = true;
 
-    let helpMsgElementArray = [document.getElementById("help_1"), document.getElementById("help_2"), document.getElementById("help_3")];
-    let helpMsgsTextArray = getHelpMsgs(stage);
+    helpMsgsTextArray = getHelpMsgs(stage);
     let helpMsgStubArray = ["1. ...", "2. ...", "3. ..."];
+
+    console.log(helpMsgsTextArray);
 
     stubResolveMsgs(helpMsgElementArray, helpMsgStubArray);
 
@@ -197,6 +202,9 @@ let cliks = 0;
 
 let helpButton = document.getElementById("button-help");
 helpButton.disabled = true;
+
+let helpMsgElementArray = [document.getElementById("help_1"), document.getElementById("help_2"), document.getElementById("help_3")];
+let helpMsgsTextArray = [];
 
 helpButton.addEventListener("click", () => {
     if (time === 0) {
