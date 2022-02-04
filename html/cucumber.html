@@ -2,12 +2,13 @@
 <html lang="rus">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <title>С днем Рождения</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../sass/style.css">
 </head>
-<body class="body-puzzle-final">
+<body class="body-puzzle-final">    
     <header class="header header-puzzle-final">
         <div class="wrapper">
             <div class="container container-pizzle-final">
@@ -15,23 +16,27 @@
             </div>
         </div>
     </header>
-    <section class="puzzle">
-        <div class="wrapper">
-            <div class="container container-pizzle-final">
-                <div class="puzzle__direction">
-                    <h2 class="puzzle__title">Поздравление</h2>
-                    <div class="puzzle__container">
-                        <h3 class="puzzle_text">
-                            Мы поздравляем тебя с твоим днём рождения! <b>Пусть всё задуманное сбудется</b>, а твоя жизнь будет словно <b>шоколад!</b><br>
-                            Желаем тебе <b>счастьечко</b>, и чтобы всё, чем ты занимешься, приносило только <b>удовольствие</b>!<br>
-                            <b>Да пребудет с тобой сила</b> в твоём не лёгком учительском призвании!<br>
-                            Пусть в ваших отношениях всё будет гладко и вы будете вместе <b>365</b> дней в году, как <b>Чуча и Перец!</b><br>
-                            Надеюсь тебе понравился этот квест и после каждой загадки ты говорила: <b>"Это была отличная загадка!"</b><br>
-                            <b>Всего хорошего и спасибо за рыбу!</b></h3>                     
+    <section class="puzzle">            
+        <div class="wrapper__final">
+            <div class="puzzle__with-canvas">
+                <canvas class="canvas" width="300" height="300" id="fireworks-canvas" style="background:#000;"></canvas>
+                <div class="container container-pizzle-final">                
+                    <div class="puzzle__direction">                        
+                        <h2 class="puzzle__title puzzle__title-congratulation">Поздравляем,<br> Ты - победитель!</h2>
+                        <div class="puzzle__container">
+                            <h3 class="puzzle__text puzzle__text-congratulation">
+                                Мы поздравляем тебя с твоим днём рождения! <b class="puzzle__text-5">Пусть всё задуманное сбудется</b>, а твоя жизнь будет словно <b class="puzzle__text-1">шоколад!</b><br>
+                                Желаем тебе <b class="puzzle__text-3">счастьечко</b>, и чтобы всё, чем ты занимешься, приносило только <b class="puzzle__text-6">удовольствие</b>!<br>
+                                <b class="puzzle__text-4">Да пребудет с тобой сила</b> в твоём не лёгком учительском призвании!<br>
+                                Пусть в ваших отношениях всё будет гладко и вы будете вместе <b class="puzzle__text-8">365</b> дней в году, как <b class="puzzle__text-2">Чуча и Перец!</b><br>
+                                Надеюсь тебе понравился этот квест и после каждой загадки ты говорила: <b class="puzzle__text-9">"Это была отличная загадка!"</b><br>
+                                <b class="puzzle__text-10">Всего хорошего и спасибо за рыбу!</b></h3>                     
+                        </div>
+                        <h3 id="result_time" class="puzzle__title"></h2>           
                     </div>
-                    <h3 id="result_time" class="puzzle__title"></h2>             
-                </div>  
-            </div>      
+                </div>
+                <canvas class="canvas" width="300" height="300" id="fireworks-canvas" style="background:#000;"></canvas>
+            </div>
         </div>
     </section>      
 </body>

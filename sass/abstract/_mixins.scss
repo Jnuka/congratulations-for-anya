@@ -37,16 +37,18 @@
     th,
     td,
     .puzzle__title,
-    .puzzle_text,
+    .puzzle__text,
     .help__title,
     .puzzle__input,
     .puzzle__image,
     .puzzle__description,
     .puzzle__description-level,
+    .header__title,
     .button,    
     .help_1,
     .help_2,
-    .help_3 {
+    .help_3,
+    b {
         &::selection{
             background: $color;
         }
@@ -70,6 +72,10 @@
 
 @mixin media-content {
     @media(max-width: $content-max-width) {@content;}
+}
+
+@mixin media-laptopL {
+    @media(max-width: $laptopL-width) {@content;}
 }
 
 @mixin media-laptop {

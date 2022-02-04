@@ -40,5 +40,6 @@
 .container-pizzle-final {
     border: 5px solid $color-final-border;
     @include color-selection($color-final-border);  
+    max-width: 810px;
 }
 

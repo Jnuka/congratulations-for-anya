@@ -40,7 +40,7 @@ body {
 
 h1 {
     @extend %font-default;
-    @include font($size: 4.0rem, $height: 5.0rem, $weight: 400);
+    @include font($size: 4.0rem, $height: 5.4rem, $weight: 400);
     @include media-table {
         @include font($size: 3.0rem);
     }
@@ -52,8 +52,14 @@ h1 {
 h2 {
     @extend %font-default;
     @include font($size: 3.4rem, $height: 4.6rem, $weight: 400);
+    @include media-table {
+        @include font($size: 2.5rem, $height: 4.6rem);
+    }
+    @include media-mobileL {
+        @include font($size: 2.0rem, $height: 3.0rem, $weight: 400);
+    }
     @include media-mobileS {
-        @include font($size: 3.0rem, $height: 4.0rem, $weight: 400);
+        @include font($size: 1.5rem, $height: 2.0rem, $weight: 400);
     }
 }
 

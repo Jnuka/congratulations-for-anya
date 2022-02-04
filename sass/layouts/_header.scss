@@ -1,6 +1,7 @@
 .header {
     background: $color-light;
     padding: 42px 0;
+    display: flex;
 }
 
 .header__title {
@@ -11,30 +12,36 @@
 //фон с конфетами
 .header-puzzle1 {
     background-image: url("../img/puzzles/fon1.png");
+    @include color-selection($color-lolipop);
 }
 
 //фон с перьями
 .header-puzzle3 {
     background-image: url("../img/puzzles/fon3.png");
+    @include color-selection(rgba($color-feather, 0.5)); 
 }
 
 //фон собаки
 .header-puzzle5 {
     background-image: url("../img/puzzles/fon5.png");
+    @include color-selection($color-dog);
 }
 
 //фон с огонем
 .header-puzzle7 {
     background-image: url("../img/puzzles/fon7.png");
+    @include color-selection($color-fire);
 }
 
 //фон с шахматными фигурами
 .header-puzzle9 {
     background-image: url("../img/puzzles/fon9.png");
+    @include color-selection($color-dice);
 }
 
 //нейтральный фон для поздравления
 .header-puzzle-final {
     background-image: url("../img/final/background4.png");
+    @include color-selection($color-final-border);
 }
 
