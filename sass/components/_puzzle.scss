@@ -9,7 +9,7 @@
 .puzzle__with-canvas {
     display: flex;
     justify-content: space-between;
-    @include media-laptopL {
+    @include media-laptop {
         .canvas {
             display: none;
         }

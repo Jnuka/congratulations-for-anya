@@ -15,7 +15,6 @@
 //фон с перьями
 .container-pizzle3 {
     border: 5px solid $color-feather;
-
     @include color-selection(rgba($color-feather, 0.5)); 
 }
 
@@ -40,6 +39,8 @@
 .container-pizzle-final {
     border: 5px solid $color-final-border;
     @include color-selection($color-final-border);  
-    max-width: 810px;
+    @include media-laptopL {
+        max-width: 971px;
+    }
 }
 
