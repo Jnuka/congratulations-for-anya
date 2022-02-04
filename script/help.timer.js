@@ -1,4 +1,4 @@
-const TIME = 60 * 3; // time in seconds
+const TIME = 0//60 * 3; // time in seconds
 
 const getHelpButtonNotReadyMsg = (time) => {return `Следующая подсказка будет доступна через ${time} секунд(ы)`};
 const HELP_IS_READY_MSG = "Доступна новая подсказка!";

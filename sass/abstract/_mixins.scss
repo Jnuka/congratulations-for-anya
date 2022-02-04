@@ -32,6 +32,27 @@
         }    
 }
 
+@mixin color-selection ($color) {
+    br,
+    th,
+    td,
+    .puzzle__title,
+    .puzzle_text,
+    .help__title,
+    .puzzle__input,
+    .puzzle__image,
+    .puzzle__description,
+    .puzzle__description-level,
+    .button,    
+    .help_1,
+    .help_2,
+    .help_3 {
+        &::selection{
+            background: $color;
+        }
+    }
+}
+
 @mixin hover-buttons ($color) {
     background-color: $color;
     color: $color-light;

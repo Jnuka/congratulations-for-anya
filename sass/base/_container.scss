@@ -9,29 +9,36 @@
 //фон с конфетами
 .container-pizzle1 {
     border: 5px solid $color-lolipop;
+    @include color-selection($color-lolipop);
 }
 
 //фон с перьями
 .container-pizzle3 {
     border: 5px solid $color-feather;
+
+    @include color-selection(rgba($color-feather, 0.5)); 
 }
 
 //фон собаки
 .container-pizzle5 {
     border: 5px solid $color-dog;
+    @include color-selection($color-dog);  
 }
 
 //фон с огонем
 .container-pizzle7 {
     border: 5px solid $color-fire;
+    @include color-selection($color-fire);
 }
 
 //фон с шахматными фигурами
 .container-pizzle9 {
     border: 5px solid $color-dice;
+    @include color-selection($color-dice);  
 }
 
 .container-pizzle-final {
     border: 5px solid $color-final-border;
+    @include color-selection($color-final-border);  
 }
 

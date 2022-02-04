@@ -42,12 +42,15 @@
 .puzzle_film {    
     &-easy {
         color: $color-ease;
+        @include color-selection($color-ease); 
     }
     &-normal {
         color: $color-normal;
+        @include color-selection($color-normal); 
     }
     &-hard {
         color: $color-hard;
+        @include color-selection($color-hard); 
     }
 }
 
@@ -159,18 +162,23 @@
 .modal {
     &__one {
         @include modal-puzzle($color-lolipop);
+        @include color-selection($color-lolipop);        
     }
     &__three {
         @include modal-puzzle($color-feather);
+        @include color-selection(rgba($color-feather, 0.5));  
     }
     &__five {
         @include modal-puzzle($color-dog);
+        @include color-selection($color-dog);  
     }
     &__seven {
         @include modal-puzzle($color-fire);
+        @include color-selection($color-fire);  
     }
     &__nine {
         @include modal-puzzle($color-dice);
+        @include color-selection($color-dice);  
     }
 }
    
