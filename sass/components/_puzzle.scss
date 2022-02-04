@@ -6,10 +6,14 @@
     @extend %font-add;   
 }
 
+.puzzle__time {
+    margin-top: 20px;
+}
+
 .puzzle__with-canvas {
     display: flex;
     justify-content: space-between;
-    @include media-laptopL {
+    @include media-laptop {
         .canvas {
             display: none;
         }
