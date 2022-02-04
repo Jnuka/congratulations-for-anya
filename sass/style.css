@@ -548,7 +548,7 @@ ul {
 
 .container-pizzle-final {
   border: 5px solid #c0ced1;
-  max-width: 1000px;
+  max-width: 810px;
 }
 .container-pizzle-final br::selection,
 .container-pizzle-final th::selection,
@@ -833,6 +833,7 @@ h3 {
 .header {
   background: #ffffff;
   padding: 42px 0;
+  display: flex;
 }
 
 .header__title {
@@ -992,7 +993,7 @@ h3 {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1100px) {
   .puzzle__with-canvas {
     justify-content: center;
   }
