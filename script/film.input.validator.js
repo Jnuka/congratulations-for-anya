@@ -83,19 +83,17 @@ let input = document.getElementById('input')
 form.addEventListener('submit', function (event) {
   event.preventDefault();
 
-  if (testInput(stage, input.value)) {
-        console.log("It's correct");
+  if (testInput(fStage, input.value)) {
+      console.log("It's correct");
         
-        stage += 1;
-        input.value = "";
+      fStage += 1;
+      if (fStage > 25) {
+        window.location.href = nextPage;
+      }
+      input.value = "";
 
-        updateLabel();
-        resetTimer();
-
-        if (stage === 25) {
-            console.log("Redirect to next page")
-            window.location.href = nextPage;
-        }
+      updateLabel();
+      resetTimer();
 
     } else {
         input.classList.add("bounce");

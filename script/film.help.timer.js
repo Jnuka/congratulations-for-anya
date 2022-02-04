@@ -137,9 +137,9 @@ const getHelpButtonNotReadyMsg = (time) => {return `Следующая подс�
 const HELP_IS_READY_MSG = "Доступна новая подсказка!";
 const USED_ALL_HELPS_MSG = "Использованы все доступные подсказки";
 
-const getHelpMsgs = (stage) => {
+const getHelpMsgs = (fStage) => {
     let arr = [];
-    let hints = HELPS[stage];
+    let hints = HELPS[fStage];
 
     for (let i = 0; i < hints.length; i++) {
         let str = "";
@@ -186,7 +186,7 @@ function resetTimer() {
     cliks = 0;
     helpButton.disabled = true;
 
-    helpMsgsTextArray = getHelpMsgs(stage);
+    helpMsgsTextArray = getHelpMsgs(fStage);
     let helpMsgStubArray = ["1. ...", "2. ...", "3. ..."];
 
     stubResolveMsgs(helpMsgElementArray, helpMsgStubArray);
