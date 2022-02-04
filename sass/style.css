@@ -425,7 +425,7 @@ ul {
   font-family: "Press Start 2P", cursive;
 }
 
-.button-puzzle9:hover, .button-puzzle7:hover, .button-puzzle5:hover, .button-puzzle3:hover, .button-puzzle1:hover {
+.button-help:active, .button-puzzle9:hover:enabled, .button-puzzle7:hover:enabled, .button-puzzle5:hover:enabled, .button-puzzle3:hover:enabled, .button-puzzle1:hover:enabled {
   transition: all 0.3s ease-out;
 }
 
@@ -443,16 +443,18 @@ ul {
 .container-pizzle1 th::selection,
 .container-pizzle1 td::selection,
 .container-pizzle1 .puzzle__title::selection,
-.container-pizzle1 .puzzle_text::selection,
+.container-pizzle1 .puzzle__text::selection,
 .container-pizzle1 .help__title::selection,
 .container-pizzle1 .puzzle__input::selection,
 .container-pizzle1 .puzzle__image::selection,
 .container-pizzle1 .puzzle__description::selection,
 .container-pizzle1 .puzzle__description-level::selection,
+.container-pizzle1 .header__title::selection,
 .container-pizzle1 .button::selection,
 .container-pizzle1 .help_1::selection,
 .container-pizzle1 .help_2::selection,
-.container-pizzle1 .help_3::selection {
+.container-pizzle1 .help_3::selection,
+.container-pizzle1 b::selection {
   background: pink;
 }
 
@@ -463,16 +465,18 @@ ul {
 .container-pizzle3 th::selection,
 .container-pizzle3 td::selection,
 .container-pizzle3 .puzzle__title::selection,
-.container-pizzle3 .puzzle_text::selection,
+.container-pizzle3 .puzzle__text::selection,
 .container-pizzle3 .help__title::selection,
 .container-pizzle3 .puzzle__input::selection,
 .container-pizzle3 .puzzle__image::selection,
 .container-pizzle3 .puzzle__description::selection,
 .container-pizzle3 .puzzle__description-level::selection,
+.container-pizzle3 .header__title::selection,
 .container-pizzle3 .button::selection,
 .container-pizzle3 .help_1::selection,
 .container-pizzle3 .help_2::selection,
-.container-pizzle3 .help_3::selection {
+.container-pizzle3 .help_3::selection,
+.container-pizzle3 b::selection {
   background: rgba(66, 37, 33, 0.5);
 }
 
@@ -483,16 +487,18 @@ ul {
 .container-pizzle5 th::selection,
 .container-pizzle5 td::selection,
 .container-pizzle5 .puzzle__title::selection,
-.container-pizzle5 .puzzle_text::selection,
+.container-pizzle5 .puzzle__text::selection,
 .container-pizzle5 .help__title::selection,
 .container-pizzle5 .puzzle__input::selection,
 .container-pizzle5 .puzzle__image::selection,
 .container-pizzle5 .puzzle__description::selection,
 .container-pizzle5 .puzzle__description-level::selection,
+.container-pizzle5 .header__title::selection,
 .container-pizzle5 .button::selection,
 .container-pizzle5 .help_1::selection,
 .container-pizzle5 .help_2::selection,
-.container-pizzle5 .help_3::selection {
+.container-pizzle5 .help_3::selection,
+.container-pizzle5 b::selection {
   background: rgba(85, 65, 49, 0.8);
 }
 
@@ -503,16 +509,18 @@ ul {
 .container-pizzle7 th::selection,
 .container-pizzle7 td::selection,
 .container-pizzle7 .puzzle__title::selection,
-.container-pizzle7 .puzzle_text::selection,
+.container-pizzle7 .puzzle__text::selection,
 .container-pizzle7 .help__title::selection,
 .container-pizzle7 .puzzle__input::selection,
 .container-pizzle7 .puzzle__image::selection,
 .container-pizzle7 .puzzle__description::selection,
 .container-pizzle7 .puzzle__description-level::selection,
+.container-pizzle7 .header__title::selection,
 .container-pizzle7 .button::selection,
 .container-pizzle7 .help_1::selection,
 .container-pizzle7 .help_2::selection,
-.container-pizzle7 .help_3::selection {
+.container-pizzle7 .help_3::selection,
+.container-pizzle7 b::selection {
   background: #941c0c;
 }
 
@@ -523,36 +531,41 @@ ul {
 .container-pizzle9 th::selection,
 .container-pizzle9 td::selection,
 .container-pizzle9 .puzzle__title::selection,
-.container-pizzle9 .puzzle_text::selection,
+.container-pizzle9 .puzzle__text::selection,
 .container-pizzle9 .help__title::selection,
 .container-pizzle9 .puzzle__input::selection,
 .container-pizzle9 .puzzle__image::selection,
 .container-pizzle9 .puzzle__description::selection,
 .container-pizzle9 .puzzle__description-level::selection,
+.container-pizzle9 .header__title::selection,
 .container-pizzle9 .button::selection,
 .container-pizzle9 .help_1::selection,
 .container-pizzle9 .help_2::selection,
-.container-pizzle9 .help_3::selection {
+.container-pizzle9 .help_3::selection,
+.container-pizzle9 b::selection {
   background: #d1bf19;
 }
 
 .container-pizzle-final {
   border: 5px solid #c0ced1;
+  max-width: 1000px;
 }
 .container-pizzle-final br::selection,
 .container-pizzle-final th::selection,
 .container-pizzle-final td::selection,
 .container-pizzle-final .puzzle__title::selection,
-.container-pizzle-final .puzzle_text::selection,
+.container-pizzle-final .puzzle__text::selection,
 .container-pizzle-final .help__title::selection,
 .container-pizzle-final .puzzle__input::selection,
 .container-pizzle-final .puzzle__image::selection,
 .container-pizzle-final .puzzle__description::selection,
 .container-pizzle-final .puzzle__description-level::selection,
+.container-pizzle-final .header__title::selection,
 .container-pizzle-final .button::selection,
 .container-pizzle-final .help_1::selection,
 .container-pizzle-final .help_2::selection,
-.container-pizzle-final .help_3::selection {
+.container-pizzle-final .help_3::selection,
+.container-pizzle-final b::selection {
   background: #c0ced1;
 }
 
@@ -594,7 +607,7 @@ body {
 
 h1 {
   font-size: 4rem;
-  line-height: 5rem;
+  line-height: 5.4rem;
   font-weight: 400;
   font-style: normal;
 }
@@ -621,10 +634,26 @@ h2 {
   font-weight: 400;
   font-style: normal;
 }
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+    line-height: 4.6rem;
+    font-weight: bold;
+    font-style: normal;
+  }
+}
+@media (max-width: 475px) {
+  h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
 @media (max-width: 320px) {
   h2 {
-    font-size: 3rem;
-    line-height: 4rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     font-weight: 400;
     font-style: normal;
   }
@@ -661,7 +690,7 @@ h3 {
   }
 }
 
-.puzzle_button {
+.puzzle__button {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -681,7 +710,7 @@ h3 {
 .button-puzzle1:hover, .button-puzzle1:focus {
   border-color: pink;
 }
-.button-puzzle1:hover {
+.button-puzzle1:hover:enabled {
   background-color: pink;
   color: #ffffff;
 }
@@ -692,7 +721,7 @@ h3 {
 .button-puzzle3:hover, .button-puzzle3:focus {
   border-color: #422521;
 }
-.button-puzzle3:hover {
+.button-puzzle3:hover:enabled {
   background-color: #422521;
   color: #ffffff;
 }
@@ -703,7 +732,7 @@ h3 {
 .button-puzzle5:hover, .button-puzzle5:focus {
   border-color: rgba(85, 65, 49, 0.8);
 }
-.button-puzzle5:hover {
+.button-puzzle5:hover:enabled {
   background-color: rgba(85, 65, 49, 0.8);
   color: #ffffff;
 }
@@ -714,7 +743,7 @@ h3 {
 .button-puzzle7:hover, .button-puzzle7:focus {
   border-color: #941c0c;
 }
-.button-puzzle7:hover {
+.button-puzzle7:hover:enabled {
   background-color: #941c0c;
   color: #ffffff;
 }
@@ -725,13 +754,17 @@ h3 {
 .button-puzzle9:hover, .button-puzzle9:focus {
   border-color: #d1bf19;
 }
-.button-puzzle9:hover {
+.button-puzzle9:hover:enabled {
   background-color: #d1bf19;
   color: #ffffff;
 }
 
 .button-help {
   margin-top: 20px;
+}
+.button-help:active {
+  background-color: pink;
+  color: #ffffff;
 }
 @media (max-width: 2560px) {
   .button-help {
@@ -745,7 +778,7 @@ h3 {
 }
 
 .button-next {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .overlay {
@@ -810,25 +843,133 @@ h3 {
 .header-puzzle1 {
   background-image: url("../img/puzzles/fon1.png");
 }
+.header-puzzle1 br::selection,
+.header-puzzle1 th::selection,
+.header-puzzle1 td::selection,
+.header-puzzle1 .puzzle__title::selection,
+.header-puzzle1 .puzzle__text::selection,
+.header-puzzle1 .help__title::selection,
+.header-puzzle1 .puzzle__input::selection,
+.header-puzzle1 .puzzle__image::selection,
+.header-puzzle1 .puzzle__description::selection,
+.header-puzzle1 .puzzle__description-level::selection,
+.header-puzzle1 .header__title::selection,
+.header-puzzle1 .button::selection,
+.header-puzzle1 .help_1::selection,
+.header-puzzle1 .help_2::selection,
+.header-puzzle1 .help_3::selection,
+.header-puzzle1 b::selection {
+  background: pink;
+}
 
 .header-puzzle3 {
   background-image: url("../img/puzzles/fon3.png");
+}
+.header-puzzle3 br::selection,
+.header-puzzle3 th::selection,
+.header-puzzle3 td::selection,
+.header-puzzle3 .puzzle__title::selection,
+.header-puzzle3 .puzzle__text::selection,
+.header-puzzle3 .help__title::selection,
+.header-puzzle3 .puzzle__input::selection,
+.header-puzzle3 .puzzle__image::selection,
+.header-puzzle3 .puzzle__description::selection,
+.header-puzzle3 .puzzle__description-level::selection,
+.header-puzzle3 .header__title::selection,
+.header-puzzle3 .button::selection,
+.header-puzzle3 .help_1::selection,
+.header-puzzle3 .help_2::selection,
+.header-puzzle3 .help_3::selection,
+.header-puzzle3 b::selection {
+  background: rgba(66, 37, 33, 0.5);
 }
 
 .header-puzzle5 {
   background-image: url("../img/puzzles/fon5.png");
 }
+.header-puzzle5 br::selection,
+.header-puzzle5 th::selection,
+.header-puzzle5 td::selection,
+.header-puzzle5 .puzzle__title::selection,
+.header-puzzle5 .puzzle__text::selection,
+.header-puzzle5 .help__title::selection,
+.header-puzzle5 .puzzle__input::selection,
+.header-puzzle5 .puzzle__image::selection,
+.header-puzzle5 .puzzle__description::selection,
+.header-puzzle5 .puzzle__description-level::selection,
+.header-puzzle5 .header__title::selection,
+.header-puzzle5 .button::selection,
+.header-puzzle5 .help_1::selection,
+.header-puzzle5 .help_2::selection,
+.header-puzzle5 .help_3::selection,
+.header-puzzle5 b::selection {
+  background: rgba(85, 65, 49, 0.8);
+}
 
 .header-puzzle7 {
   background-image: url("../img/puzzles/fon7.png");
+}
+.header-puzzle7 br::selection,
+.header-puzzle7 th::selection,
+.header-puzzle7 td::selection,
+.header-puzzle7 .puzzle__title::selection,
+.header-puzzle7 .puzzle__text::selection,
+.header-puzzle7 .help__title::selection,
+.header-puzzle7 .puzzle__input::selection,
+.header-puzzle7 .puzzle__image::selection,
+.header-puzzle7 .puzzle__description::selection,
+.header-puzzle7 .puzzle__description-level::selection,
+.header-puzzle7 .header__title::selection,
+.header-puzzle7 .button::selection,
+.header-puzzle7 .help_1::selection,
+.header-puzzle7 .help_2::selection,
+.header-puzzle7 .help_3::selection,
+.header-puzzle7 b::selection {
+  background: #941c0c;
 }
 
 .header-puzzle9 {
   background-image: url("../img/puzzles/fon9.png");
 }
+.header-puzzle9 br::selection,
+.header-puzzle9 th::selection,
+.header-puzzle9 td::selection,
+.header-puzzle9 .puzzle__title::selection,
+.header-puzzle9 .puzzle__text::selection,
+.header-puzzle9 .help__title::selection,
+.header-puzzle9 .puzzle__input::selection,
+.header-puzzle9 .puzzle__image::selection,
+.header-puzzle9 .puzzle__description::selection,
+.header-puzzle9 .puzzle__description-level::selection,
+.header-puzzle9 .header__title::selection,
+.header-puzzle9 .button::selection,
+.header-puzzle9 .help_1::selection,
+.header-puzzle9 .help_2::selection,
+.header-puzzle9 .help_3::selection,
+.header-puzzle9 b::selection {
+  background: #d1bf19;
+}
 
 .header-puzzle-final {
   background-image: url("../img/final/background4.png");
+}
+.header-puzzle-final br::selection,
+.header-puzzle-final th::selection,
+.header-puzzle-final td::selection,
+.header-puzzle-final .puzzle__title::selection,
+.header-puzzle-final .puzzle__text::selection,
+.header-puzzle-final .help__title::selection,
+.header-puzzle-final .puzzle__input::selection,
+.header-puzzle-final .puzzle__image::selection,
+.header-puzzle-final .puzzle__description::selection,
+.header-puzzle-final .puzzle__description-level::selection,
+.header-puzzle-final .header__title::selection,
+.header-puzzle-final .button::selection,
+.header-puzzle-final .help_1::selection,
+.header-puzzle-final .help_2::selection,
+.header-puzzle-final .help_3::selection,
+.header-puzzle-final b::selection {
+  background: #c0ced1;
 }
 
 .wrapper {
@@ -836,11 +977,28 @@ h3 {
   margin: auto;
 }
 
+.wrapper__final {
+  margin: 10px;
+}
+
 .puzzle__title {
   max-width: 885px;
   margin: auto;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.puzzle__with-canvas {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1440px) {
+  .puzzle__with-canvas {
+    justify-content: center;
+  }
+  .puzzle__with-canvas .canvas {
+    display: none;
+  }
 }
 
 .puzzle__description {
@@ -882,16 +1040,18 @@ h3 {
 .puzzle_film-easy th::selection,
 .puzzle_film-easy td::selection,
 .puzzle_film-easy .puzzle__title::selection,
-.puzzle_film-easy .puzzle_text::selection,
+.puzzle_film-easy .puzzle__text::selection,
 .puzzle_film-easy .help__title::selection,
 .puzzle_film-easy .puzzle__input::selection,
 .puzzle_film-easy .puzzle__image::selection,
 .puzzle_film-easy .puzzle__description::selection,
 .puzzle_film-easy .puzzle__description-level::selection,
+.puzzle_film-easy .header__title::selection,
 .puzzle_film-easy .button::selection,
 .puzzle_film-easy .help_1::selection,
 .puzzle_film-easy .help_2::selection,
-.puzzle_film-easy .help_3::selection {
+.puzzle_film-easy .help_3::selection,
+.puzzle_film-easy b::selection {
   background: green;
 }
 .puzzle_film-normal {
@@ -901,16 +1061,18 @@ h3 {
 .puzzle_film-normal th::selection,
 .puzzle_film-normal td::selection,
 .puzzle_film-normal .puzzle__title::selection,
-.puzzle_film-normal .puzzle_text::selection,
+.puzzle_film-normal .puzzle__text::selection,
 .puzzle_film-normal .help__title::selection,
 .puzzle_film-normal .puzzle__input::selection,
 .puzzle_film-normal .puzzle__image::selection,
 .puzzle_film-normal .puzzle__description::selection,
 .puzzle_film-normal .puzzle__description-level::selection,
+.puzzle_film-normal .header__title::selection,
 .puzzle_film-normal .button::selection,
 .puzzle_film-normal .help_1::selection,
 .puzzle_film-normal .help_2::selection,
-.puzzle_film-normal .help_3::selection {
+.puzzle_film-normal .help_3::selection,
+.puzzle_film-normal b::selection {
   background: orange;
 }
 .puzzle_film-hard {
@@ -920,16 +1082,18 @@ h3 {
 .puzzle_film-hard th::selection,
 .puzzle_film-hard td::selection,
 .puzzle_film-hard .puzzle__title::selection,
-.puzzle_film-hard .puzzle_text::selection,
+.puzzle_film-hard .puzzle__text::selection,
 .puzzle_film-hard .help__title::selection,
 .puzzle_film-hard .puzzle__input::selection,
 .puzzle_film-hard .puzzle__image::selection,
 .puzzle_film-hard .puzzle__description::selection,
 .puzzle_film-hard .puzzle__description-level::selection,
+.puzzle_film-hard .header__title::selection,
 .puzzle_film-hard .button::selection,
 .puzzle_film-hard .help_1::selection,
 .puzzle_film-hard .help_2::selection,
-.puzzle_film-hard .help_3::selection {
+.puzzle_film-hard .help_3::selection,
+.puzzle_film-hard b::selection {
   background: red;
 }
 
@@ -1013,21 +1177,40 @@ h3 {
   }
 }
 
-.puzzle_text {
+.puzzle__text {
   max-width: 800px;
   width: 100%;
   text-align: center;
   margin: 0;
 }
 @media (max-width: 2560px) {
-  .puzzle_text-puzzle5 {
+  .puzzle__text-puzzle5 {
     display: none;
   }
 }
 @media (max-width: 1024px) {
-  .puzzle_text-puzzle5 {
+  .puzzle__text-puzzle5 {
     display: block;
   }
+}
+.puzzle__text-1, .puzzle__text-2 {
+  color: #FF69B4;
+}
+.puzzle__text-3, .puzzle__text-4 {
+  color: #4169E1;
+}
+.puzzle__text-5, .puzzle__text-6 {
+  color: #008080;
+}
+.puzzle__text-7, .puzzle__text-8 {
+  color: #DC143C;
+}
+.puzzle__text-9, .puzzle__text-10 {
+  color: #FFA500;
+}
+
+.puzzle__text-leaf {
+  margin-bottom: 20px;
 }
 
 .puzzle__answer {
@@ -1105,16 +1288,18 @@ h3 {
 .modal__one th::selection,
 .modal__one td::selection,
 .modal__one .puzzle__title::selection,
-.modal__one .puzzle_text::selection,
+.modal__one .puzzle__text::selection,
 .modal__one .help__title::selection,
 .modal__one .puzzle__input::selection,
 .modal__one .puzzle__image::selection,
 .modal__one .puzzle__description::selection,
 .modal__one .puzzle__description-level::selection,
+.modal__one .header__title::selection,
 .modal__one .button::selection,
 .modal__one .help_1::selection,
 .modal__one .help_2::selection,
-.modal__one .help_3::selection {
+.modal__one .help_3::selection,
+.modal__one b::selection {
   background: pink;
 }
 .modal__three {
@@ -1125,16 +1310,18 @@ h3 {
 .modal__three th::selection,
 .modal__three td::selection,
 .modal__three .puzzle__title::selection,
-.modal__three .puzzle_text::selection,
+.modal__three .puzzle__text::selection,
 .modal__three .help__title::selection,
 .modal__three .puzzle__input::selection,
 .modal__three .puzzle__image::selection,
 .modal__three .puzzle__description::selection,
 .modal__three .puzzle__description-level::selection,
+.modal__three .header__title::selection,
 .modal__three .button::selection,
 .modal__three .help_1::selection,
 .modal__three .help_2::selection,
-.modal__three .help_3::selection {
+.modal__three .help_3::selection,
+.modal__three b::selection {
   background: rgba(66, 37, 33, 0.5);
 }
 .modal__five {
@@ -1145,16 +1332,18 @@ h3 {
 .modal__five th::selection,
 .modal__five td::selection,
 .modal__five .puzzle__title::selection,
-.modal__five .puzzle_text::selection,
+.modal__five .puzzle__text::selection,
 .modal__five .help__title::selection,
 .modal__five .puzzle__input::selection,
 .modal__five .puzzle__image::selection,
 .modal__five .puzzle__description::selection,
 .modal__five .puzzle__description-level::selection,
+.modal__five .header__title::selection,
 .modal__five .button::selection,
 .modal__five .help_1::selection,
 .modal__five .help_2::selection,
-.modal__five .help_3::selection {
+.modal__five .help_3::selection,
+.modal__five b::selection {
   background: rgba(85, 65, 49, 0.8);
 }
 .modal__seven {
@@ -1165,16 +1354,18 @@ h3 {
 .modal__seven th::selection,
 .modal__seven td::selection,
 .modal__seven .puzzle__title::selection,
-.modal__seven .puzzle_text::selection,
+.modal__seven .puzzle__text::selection,
 .modal__seven .help__title::selection,
 .modal__seven .puzzle__input::selection,
 .modal__seven .puzzle__image::selection,
 .modal__seven .puzzle__description::selection,
 .modal__seven .puzzle__description-level::selection,
+.modal__seven .header__title::selection,
 .modal__seven .button::selection,
 .modal__seven .help_1::selection,
 .modal__seven .help_2::selection,
-.modal__seven .help_3::selection {
+.modal__seven .help_3::selection,
+.modal__seven b::selection {
   background: #941c0c;
 }
 .modal__nine {
@@ -1185,16 +1376,18 @@ h3 {
 .modal__nine th::selection,
 .modal__nine td::selection,
 .modal__nine .puzzle__title::selection,
-.modal__nine .puzzle_text::selection,
+.modal__nine .puzzle__text::selection,
 .modal__nine .help__title::selection,
 .modal__nine .puzzle__input::selection,
 .modal__nine .puzzle__image::selection,
 .modal__nine .puzzle__description::selection,
 .modal__nine .puzzle__description-level::selection,
+.modal__nine .header__title::selection,
 .modal__nine .button::selection,
 .modal__nine .help_1::selection,
 .modal__nine .help_2::selection,
-.modal__nine .help_3::selection {
+.modal__nine .help_3::selection,
+.modal__nine b::selection {
   background: #d1bf19;
 }
 

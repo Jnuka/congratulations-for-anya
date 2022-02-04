@@ -6,6 +6,17 @@
     @extend %font-add;   
 }
 
+.puzzle__with-canvas {
+    display: flex;
+    justify-content: space-between;
+    @include media-laptopL {
+        .canvas {
+            display: none;
+        }
+        justify-content: center;
+    }
+}
+
 .puzzle__description {
     max-width: 740px;
     margin: auto;
@@ -117,7 +128,7 @@
     }
 }
 
-.puzzle_text {
+.puzzle__text {
     max-width: 800px;
     width: 100%;    
     text-align: center;
@@ -129,7 +140,31 @@
         @include media-laptop {
             display: block;
         }
-    }    
+    }
+    &-1,
+    &-2 {
+        color: $color-lolipop-brightly;
+    }
+    &-3,
+    &-4 {
+        color: $color-feather-brightly;
+    }
+    &-5,
+    &-6 {
+        color: $color-dog-brightly;
+    }
+    &-7,
+    &-8 {
+        color: $color-fire-brightly;
+    }
+    &-9,
+    &-10 {
+        color: $color-dice-brightly;
+    }
+}
+
+.puzzle__text-leaf {
+    margin-bottom: 20px;
 }
 
 .puzzle__answer {

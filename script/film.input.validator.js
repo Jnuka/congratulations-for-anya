@@ -77,7 +77,7 @@ function testInput(stage, input) {
     return isCorrect(inputArr, RESULT[stage]);
 }
 
-let form = document.getElementById('answer_form')
+let form = document.getElementById('answer__form')
 let input = document.getElementById('input')
 
 form.addEventListener('submit', function (event) {
