@@ -39,12 +39,12 @@ let filmLabel = document.getElementById("film_label");
 filmLabel.innerHTML = FILMS[0];
 
 function updateLabel() {
-    filmLabel.innerHTML = FILMS[stage - 1];
+    filmLabel.innerHTML = fStage < 26 ? FILMS[fStage - 1] : "Увсё!";
 
-    if (stage == 11) {
+    if (fStage == 11) {
         levelLabel.innerHTML = LEVEL[0];
         filmLabel.className = "puzzle_film-normal";
-    } else if (stage == 19) {
+    } else if (fStage == 19) {
         levelLabel.innerHTML = LEVEL[1];
         filmLabel.className = "puzzle_film-hard";
     }
