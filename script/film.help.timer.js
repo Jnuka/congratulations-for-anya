@@ -169,7 +169,7 @@ const resolveHelpMsgs = (elements, realMsgs, countOfClicks) => {
 function startTimer() {
     time -= 1;
 
-    if (time === 0) {
+    if (time <= 0) {
         helpButton.innerHTML = HELP_IS_READY_MSG;
         helpButton.disabled = false;     
         clearTimeout(timer);
@@ -180,14 +180,14 @@ function startTimer() {
 }
 
 function resetTimer() {
+    clearTimeout(timer);
+    
     time = TIME + 1;
     cliks = 0;
     helpButton.disabled = true;
 
     helpMsgsTextArray = getHelpMsgs(stage);
     let helpMsgStubArray = ["1. ...", "2. ...", "3. ..."];
-
-    console.log(helpMsgsTextArray);
 
     stubResolveMsgs(helpMsgElementArray, helpMsgStubArray);
 
@@ -207,7 +207,7 @@ let helpMsgElementArray = [document.getElementById("help_1"), document.getElemen
 let helpMsgsTextArray = [];
 
 helpButton.addEventListener("click", () => {
-    if (time === 0) {
+    if (time <= 0) {
         time = TIME + 1;
         cliks += 1;
         

@@ -49,10 +49,6 @@ function testInput(stage, input) {
     .map(i => i.replace('ё', 'е'))
     .map(i => toCharCodes(i));
 
-  console.log(inputArr);
-  console.log(stage === "stage5");
-  console.log(RESULT[stage][1]);
-
   if (stage === "stage5") {
     return isCorrect(inputArr, RESULT[stage][0]) || isCorrect(inputArr, RESULT[stage][1]);
   }
@@ -65,10 +61,13 @@ let input = document.getElementById('input')
 
 form.addEventListener('submit', function (event) {
   event.preventDefault();
+
   // window.location.href = nextPage;
+
   if (testInput(stage, input.value)) {
     console.log("It's correct");
     window.location.href = nextPage;
+    
   } else {
     input.classList.add("bounce");
     setTimeout(function() {
