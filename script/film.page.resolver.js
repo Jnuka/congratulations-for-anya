@@ -39,7 +39,7 @@ let filmLabel = document.getElementById("film_label");
 filmLabel.innerHTML = FILMS[0];
 
 function updateLabel() {
-    filmLabel.innerHTML = fStage < 26 ? FILMS[fStage - 1] : "Увсё!";
+    filmLabel.innerHTML = fStage < 26 ? FILMS[fStage - 1] : FILMS[24];
 
     if (fStage == 11) {
         levelLabel.innerHTML = LEVEL[0];
