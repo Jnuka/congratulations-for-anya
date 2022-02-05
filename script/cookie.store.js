@@ -10,27 +10,47 @@ const REDIRECTS = {
     "stage10": 'html/stocking.html'
 };
 
-const SAVED_STAGE = "savedStage";
-const START_TIME = "startTime";
+const SAVED_STAGE = "questSavedStage";
+const START_TIME = "questStartTime";
 
 const SEC = 1000;
 const MIN = 60000;
 const HOUR = 3600000;
 const DAYS = 86400000;
 
-function getCookie(cookieId, cookies) {
-    let rawCookies = cookies.split("; ")
-    for (let rawCookie of rawCookies) {
-        if (rawCookie && rawCookie.startsWith(cookieId)) {
-            return rawCookie.slice(rawCookie.indexOf('=') + 1);
+function addCookie(name, value) {
+    removeCookie(name);
+    let date = new Date();
+    date.setTime(date.getTime() + (30 * 24 * 60 * 60 * 1000));
+    document.cookie = `${name}=${value}!${new Date().getTime()};expires=${date.toUTCString()}; path=/`;
+}
+
+function getCookie(name) {
+    let rawCookies = document.cookie.split("; ")
+    let foundedCookie = NaN;
+
+    for (let cookie of rawCookies) {
+        if (cookie && cookie.startsWith(name)) {
+            cookie = cookie.slice(cookie.indexOf('=') + 1); 
+            if (!foundedCookie || getCookieTimestamp(foundedCookie) < getCookieTimestamp(cookie))
+            foundedCookie = cookie;
         }
     }
 
-    return NaN;
+    return foundedCookie ? foundedCookie.substring(0, foundedCookie.indexOf('!')) : NaN;
 }
 
-let cookies = document.cookie;
-let savedStage = getCookie(SAVED_STAGE, cookies);
+function getCookieTimestamp(cookieValue) {
+    return cookieValue.indexOf('!') > 0 ? new Number(cookieValue.slice(cookieValue.indexOf('!') + 1)) : 0;
+}
+
+function removeCookie(name) {
+    document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC;"
+}
+
+
+/** Start function */
+let savedStage = getCookie(SAVED_STAGE);
 
 if (stage === "stage1" && savedStage && savedStage != "stage1" && savedStage != "stage11") {
     if (confirm("Начать с последней закрытой страницы?")) {
@@ -38,20 +58,20 @@ if (stage === "stage1" && savedStage && savedStage != "stage1" && savedStage != 
     }
 }
 
+addCookie(SAVED_STAGE, stage);
+
 if (stage === "stage1") {
-    document.cookie = `${START_TIME}=${Date.now()}`;
+    addCookie(START_TIME, Date.now());
 }
 
-document.cookie = `${SAVED_STAGE}=${stage}`;
-
 if (stage == "stage11") {
-    let startTime = getCookie(START_TIME, cookies);
+    let startTime = getCookie(START_TIME);
     let endTime = Date.now();
 
     console.log("startTime: " + startTime);
     console.log("endTime: " + endTime);
 
-    if (startTime && endTime - startTime >= 10 * MIN) {
+    if (startTime && endTime - startTime >= 0) {
         let resultTimeLabel = document.getElementById("result_time");
 
         let totalTime = endTime - startTime;
