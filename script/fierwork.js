@@ -32,21 +32,21 @@
   window.onload = function () {
     let left_firework = JS_FIREWORKS.Fireworks({
         id : 'left_fierwork',
-        hue : 120,
+        hue : 600,
         particleCount : 50,
         delay : 0,
         minDelay : 20,
         maxDelay : 40,
         boundaries : { // of respawn and target
             top: 50,
-            bottom: 240,
+            bottom: 200,
             left: 50,
-            right: 590
+            right: 200
         },
         fireworkSpeed : 2,
-        fireworkAcceleration : 1.05,
+        fireworkAcceleration : 1.15,
         particleFriction : .95,
-        particleGravity : 1.5
+        particleGravity : 1.3
     });
 
     let right_fierwork = JS_FIREWORKS.Fireworks({
@@ -58,14 +58,14 @@
         maxDelay : 40,
         boundaries : { // of respawn and target
             top: 50,
-            bottom: 240,
-            left: 50,
-            right: 590
+            bottom: 200,
+            left: 200,
+            right: 50
         },
         fireworkSpeed : 2,
-        fireworkAcceleration : 1.05,
+        fireworkAcceleration : 1.15,
         particleFriction : .95,
-        particleGravity : 1.5
+        particleGravity : 1.3
     });
 
     right_fierwork.start();
