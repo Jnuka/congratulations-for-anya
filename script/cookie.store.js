@@ -52,17 +52,19 @@ function removeCookie(name) {
 /** Start function */
 let savedStage = getCookie(SAVED_STAGE);
 
-if (stage === "stage1" && savedStage && savedStage != "stage1" && savedStage != "stage11") {
-    if (confirm("Начать с последней закрытой страницы?")) {
-        window.location.href = REDIRECTS[savedStage];
+if (stage === "stage1") {
+    if (savedStage && savedStage != "stage1" && savedStage != "stage11") {
+        if (confirm("Начать с последней закрытой страницы?")) {
+            window.location.href = REDIRECTS[savedStage];
+        } else {
+            addCookie(START_TIME, Date.now());
+        }
+    } else {
+        addCookie(START_TIME, Date.now());
     }
 }
 
 addCookie(SAVED_STAGE, stage);
-
-if (stage === "stage1") {
-    addCookie(START_TIME, Date.now());
-}
 
 if (stage == "stage11") {
     let startTime = getCookie(START_TIME);
